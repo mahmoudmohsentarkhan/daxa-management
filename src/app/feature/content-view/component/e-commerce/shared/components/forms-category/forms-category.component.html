@@ -1,0 +1,82 @@
+<section styleSection>
+  <form class="row" [formGroup]="fmCategory">
+      <title-section [title]="isEdit() ? 'update category' : 'Add New Category'"/>
+      <div class="col-12 col-lg-6">
+        <label> Category Name </label>
+        <mat-form-field>
+          <mat-label>Category Name</mat-label>
+          <input
+            matInput
+            placeholder="E.g Electroncs"
+            formControlName="name"
+          />
+        </mat-form-field>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <label> Slug</label>
+        <mat-form-field>
+          <mat-label>Slug</mat-label>
+          <input
+            matInput
+            placeholder="E.g Electroncs"
+            formControlName="slug"
+          />
+        </mat-form-field>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <label> Parent Category  </label>
+        <mat-form-field>
+          <mat-label>select</mat-label>
+          <mat-select formControlName="ParentCategory">
+            @for (category of parentCateogry; track $index) {
+            <mat-option [value]="category">{{ category }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <label> Display Type  </label>
+        <mat-form-field>
+          <mat-label>select</mat-label>
+          <mat-select formControlName="type">
+            @for (type of typeProduct; track $index) {
+            <mat-option [value]="type">{{ type }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="col-12">
+        <label> Description (optional) </label>
+        <mat-form-field>
+          <mat-label>Write your description here....</mat-label>
+          <textarea
+            matInput
+            rows="6"
+            placeholder="Type here..."
+            formControlName="description"
+          ></textarea>
+        </mat-form-field>
+      </div>
+  </form>
+  <div class="action row g-2">
+    <div class="col-12 col-lg-6 col-xxl-3">
+      <button
+        mat-flat-button
+        matRipple
+        class="add"
+        (click)="isEdit() ? update() : create()"
+      >
+        {{ isEdit() ? "update" : "create product" }}
+      </button>
+    </div>
+    <div class="col-12 col-lg-6 col-xxl-2">
+      <button mat-flat-button matRipple class="cancel" (click)="cancel()">
+        cancel
+      </button>
+    </div>
+  </div>
+</section>

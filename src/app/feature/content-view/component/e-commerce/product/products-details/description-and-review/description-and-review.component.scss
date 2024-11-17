@@ -1,0 +1,33 @@
+section {
+  .btn{
+    background-color: #e7effd;
+    margin-bottom: 25px;
+    button{
+      padding: 15px 5px;
+      position: relative;
+      &:first-child{
+        margin-inline-end: 25px;
+      }
+      &:hover{
+        background-color: #deebfd;
+      }
+      &.active{
+        color: var(--daxaColor);
+        background-color: #deebfd;
+        &::after{
+          content: '';
+          height: 2px;
+          width: 100%;
+          background-color: var(--daxaColor);
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+  .content{
+    line-height: 2;
+    color: var(--bodyColor);
+  }
+}

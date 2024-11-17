@@ -1,0 +1,40 @@
+section{
+  .title{
+    font-weight: 500;
+    font-size: 18px;
+    span{
+      display: block;
+      margin-block: 10px;
+      margin-bottom: 25px;
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+  .apx-chart{
+    margin-top: -25px;
+    margin-right: -6px;
+  }
+  ul{
+    margin-top: -10px;
+    li:last-child{
+      font-size: 14px;
+      color: #999;
+    }
+  }
+}
+
+:host{
+  &:not(.separate){
+    padding-inline-end: 20px;
+    position: relative;
+    &::after{
+      content: '';
+      width: 1px;
+      height: 80%;
+      background-color: #dae0ec;
+      position: absolute;
+      right: 5px;
+      top: 10%;
+    }
+  }
+}

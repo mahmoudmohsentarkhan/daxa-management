@@ -1,0 +1,34 @@
+<section styleSection class="no-padding">
+  <div class="d-flex justify-content-between align-items-center padding-inline">
+    <app-search/>
+    <menu-list/>
+  </div>
+  <div class="table mt">
+    <table mat-table [dataSource]="dataSource">
+
+
+      <mat-text-column name="id" />
+
+      <ng-container matColumnDef="customer">
+        <th mat-header-cell *matHeaderCellDef> customer </th>
+        <td mat-cell *matCellDef="let element" >
+         <avatar-with-info [data]="{img:element.customerImg, title:element.customerName}"/>
+        </td>
+      </ng-container>
+
+      <mat-text-column name="time" headerText="date"/>
+      <mat-text-column name="numOrdersReturned" headerText="no. orders returned"/>
+      <mat-text-column name="numOrdersRetfunded" headerText="no. order refunded"/>
+      <mat-text-column name="numOrdersReplaced" headerText="no. orders replaced"/>
+      <mat-text-column name="totalRefunded" headerText="total refunded"/>
+      <mat-text-column name="totalReplaced" headerText="total replaced"/>
+      
+      <tr mat-header-row *matHeaderRowDef="displayedColumns;"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator
+      [pageSizeOptions]="[10, 20, 30  ]"
+      class="mat-paginator">
+    </mat-paginator>
+  </div>
+</section>

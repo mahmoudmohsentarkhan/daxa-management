@@ -1,0 +1,30 @@
+section{
+ .info{
+  border-block: 1px dashed #eaecf2;
+  margin-block: 20px;
+  padding-bottom: 10px;
+  .time{
+    color: var(--bodyColor)
+  }
+ }
+ .action{
+  button{
+    border-radius: 5px;
+    text-transform: capitalize;
+    padding-block: 22px;
+    width: 120px;
+    &:first-child{
+      background-color: var(--daxaColor);
+     
+    }
+    &:last-child{
+      background-color: #fff;
+      color: var(---blackColor);
+      border: 1px solid #eaecf2;
+      &:hover{
+        background-color: #ecf4fe;
+      }
+    }
+  }
+ }
+}

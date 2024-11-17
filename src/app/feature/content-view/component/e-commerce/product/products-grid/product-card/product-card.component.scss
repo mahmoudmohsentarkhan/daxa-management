@@ -1,0 +1,67 @@
+section{
+  .img{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+    .btn-fav{
+      background-color: #fff;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+      fa-icon{
+        font-size: 15px;
+        color: var(--bodyColor);
+      }
+      &:hover{
+        background-color: #eeeded;
+      }
+      &.favourite fa-icon{
+        color: var(--warningColor);
+      }
+    }
+  }
+    ul.body{
+      li{
+        &.title{
+          font-weight: 400;
+          font-size: 20px;
+        }
+        &.price {
+          margin-block: 5px;
+          b{
+            display: inline-block;
+            margin-inline-end: 25px;
+          }
+          s{
+            color: var(--bodyColor);
+          }
+        }
+      }
+    }
+    .action{
+      padding-inline: 15px;
+      button {
+        border-radius: 5px;
+        width: 100%;
+        background-color: #fff;
+        color: #333;
+        padding-block: 20px;
+        text-transform: capitalize;
+        font-weight: 400;
+        border: 1px solid var(--bodyColor);
+        overflow: hidden;
+        &:hover{
+          background-color: #1881fa1f;
+        }
+      }
+    }
+
+}

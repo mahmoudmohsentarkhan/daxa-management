@@ -1,0 +1,15 @@
+<title-section title="to do list">
+  <ul #altContent class="d-flex">
+    @for (link of links(); track $index) {
+     @if(!$last){
+      <li>{{link}}</li>
+     }@else{
+      <li>
+        <a [href]="naviate()">
+          {{link}}
+        </a>
+      </li>
+     }
+    }
+  </ul>
+</title-section>

@@ -1,0 +1,36 @@
+<section styleSection>
+  <title-section title="most leads">
+    <menu-list #altContent />
+  </title-section>
+  <div class="chart">
+
+    @if(
+      chartOptions &&
+      chartOptions.series && chartOptions.chart &&
+      chartOptions.tooltip && chartOptions.dataLabels && chartOptions.legend
+      ){
+        <apx-chart
+        [series]="chartOptions.series"
+        [chart]="chartOptions.chart"
+        [colors]="chartOptions.colors"
+        [dataLabels]="chartOptions.dataLabels"
+        [tooltip]="chartOptions.tooltip"
+        [legend]="chartOptions.legend"
+      />
+      }
+
+    </div>
+    <ul>
+
+      @for (el of elementsLeads; track $index) {
+        <li class="d-flex w-100 align-items-center  justify-content-between ">
+          <div class="type d-flex align-items-center">
+            <div class="icon d-flex align-items-center justify-content-center me-2"><mat-icon class="material-icons-outlined" [style.color]="el.color">{{el.icon}}</mat-icon></div>
+            <span class="type">{{el.name}}</span>
+          </div>
+          <span>{{el.users | number: '1.0'}}</span>
+          <span>{{ratio(el.users) | percent: '1.1-2'}}</span>
+        </li>
+      }
+    </ul>
+</section>

@@ -1,0 +1,20 @@
+<section styleSection>
+  <title-section title="active students" />
+  <div class="stats w-100 d-flex justify-content-between mb-3">
+    <stat-card title="Monthly" number="1,705"  [info]="{rate:0.52}" />
+    <stat-card title="Weekly" number="450"  [info]="{rate:0.12,isDecrease:true}"/>
+    <stat-card title="Daily" number="260"  [info]="{rate:0.2}"/>
+  </div>
+  @if (chartOptions) {
+    <apx-chart
+    [series]="chartOptions.series"
+    [chart]="chartOptions.chart"
+    [dataLabels]="chartOptions.dataLabels"
+    [labels]="chartOptions.labels"
+    [stroke]="chartOptions.stroke"
+    [plotOptions]="chartOptions.plotOptions"
+    [colors]="chartOptions.colors"
+  />
+  }
+
+</section>

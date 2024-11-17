@@ -1,0 +1,14 @@
+<section styleSection>
+  <title-section title="projects progress" />
+  @if (chartOptions){
+    <apx-chart
+    [series]="chartOptions.series"
+    [chart]="chartOptions.chart"
+    [labels]="chartOptions.labels"
+    [tooltip]="chartOptions.tooltip"
+    [dataLabels]="chartOptions.dataLabels"
+    [legend]="chartOptions.legend"
+    [colors]="chartOptions.colors"
+  />
+  }
+</section>

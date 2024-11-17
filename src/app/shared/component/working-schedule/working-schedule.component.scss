@@ -1,0 +1,44 @@
+section{
+  .events{
+    .title{
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #000;
+    }
+    ul{
+      li{
+        position: relative;
+        padding-inline-start: 20px;
+        padding-block: 20px;
+        border-bottom:1px dashed #cac8c8;
+        .time{
+          span{
+            color: var(--daxaColor);
+          }
+        }
+        &::before{
+          content: '';
+          width: 10px;
+          height: 10px;
+          border-radius: 100%;
+          position: absolute;
+          left: 0;
+          top: 25px;
+          background-color: var(--daxaColor);
+        }
+      }
+    }
+    .button{
+      text-align: end;
+      margin-top: 15px;
+
+      button{
+        color: var(--daxaColor);
+        padding: 2px;
+        &:hover{
+          background-color: #ecf4fe;
+        }
+      }
+    }
+  }
+}

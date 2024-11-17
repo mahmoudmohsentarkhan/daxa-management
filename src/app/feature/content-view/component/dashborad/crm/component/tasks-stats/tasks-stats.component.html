@@ -1,0 +1,6 @@
+<section styleSection >
+  <title-section title="tasks stats">
+    <menu-list #altContent class="color-white"/>
+  </title-section>
+  <app-chart [data]="[[30,40,60,64,78,64,59,30,80,50],[35,45,65,70,78,50,40,70,100,40]]" type="line" [categories]="['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']" [color]="['#10bae4','#e9a578']" [dashArray]="[0,10]" [size]="{h:200}"/>
+</section>

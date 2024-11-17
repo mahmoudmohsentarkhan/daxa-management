@@ -1,0 +1,67 @@
+<section styleSection>
+  <title-section title="recent orders" >
+    <div #altContent class="d-flex align-items-center alt-content">
+      <menu-list />
+      <div class="search">
+        <fa-icon [icon]="faSearch" />
+        <input type="text" placeholder="Search here">
+      </div>
+    </div>
+  </title-section>
+
+  <div class="table">
+    <div>
+      <table mat-table [dataSource]="dataSource">
+
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef> order ID </th>
+          <td mat-cell *matCellDef="let element"> #ARP-{{element.id}}. </td>
+        </ng-container>
+
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> customer </th>
+          <td mat-cell *matCellDef="let element" >
+            <div class="info d-flex align-items-center">
+              <div class="img me-2">
+                <img [src]="element.imgCustomer" width="50" height="50">
+              </div>
+              <div class="name">
+                {{element.nameCustomer}}
+              </div>
+            </div>
+          </td>
+        </ng-container>
+
+        <mat-text-column name="created"></mat-text-column>
+        <mat-text-column name="total" [dataAccessor]="getTotal"></mat-text-column>
+        <mat-text-column name="profit" [dataAccessor]="getProfit" />
+
+        <ng-container matColumnDef="status">
+          <th mat-header-cell *matHeaderCellDef>status</th>
+          <td mat-cell *matCellDef="let element" class="status">
+            <span [class]="element.status.toLowerCase()">{{element.status}}</span>
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="action">
+          <th mat-header-cell *matHeaderCellDef>status</th>
+          <td mat-cell *matCellDef="let element" class="status ">
+            <button matTooltip="View Order" matTooltipPosition="above">
+              <mat-icon aria-hidden="false" fontIcon="visibility" class="icon" matRipple/>
+            </button>
+            <button matTooltip="delete" matTooltipPosition="above" >
+              <mat-icon aria-hidden="false" fontIcon="clear" class="icon" matRipple/>
+            </button>
+          </td>
+        </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns;"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      <mat-paginator
+        [pageSizeOptions]="[5, 10, 20]"
+        class="mat-paginator">
+      </mat-paginator>
+    </div>
+  </div>
+</section>

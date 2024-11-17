@@ -1,0 +1,59 @@
+<section styleSection>
+  <title-section title="active project">
+    <menu-list #altContent />
+  </title-section>
+  <ul class="project-info d-flex align-items-center justify-content-between my-4">
+    <li class="d-flex align-items-center">
+      <div class="img">
+        <img src="https://angular.hibootstrap.com/daxa/images/projects/project1.svg" alt="">
+      </div>
+      <div class="info">
+        <span>Project Alpho</span>
+        <span class="d-block">
+          <span class="client">Client:</span>
+          Shawn Kennedy
+        </span>
+      </div>
+    </li>
+    <li class="d-flex align-items-center">
+      <div class="img">
+        <img src="https://angular.hibootstrap.com/daxa/images/projects/project2.svg" alt="">
+      </div>
+      <div class="info">
+        <span>Assigned To</span>
+        <span class="d-block">
+          Vaxo Corporation
+        </span>
+      </div>
+    </li>
+    <li class="select">
+      <button [matMenuTriggerFor]="menu" >
+        <mat-icon matSuffix class="custome-icon">more_horiz</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu" xPosition="before" yPosition="below">
+        <button mat-menu-item (click)="toggleFilterYear('view')">
+          <mat-icon matSuffix style="font-size: 16px;" class="d-flex align-items-center" color="primary">visibility</mat-icon>
+          {{'view' | titlecase}}
+        </button>
+        <button mat-menu-item (click)="toggleFilterYear('edit')">
+          <mat-icon matSuffix style="font-size: 16px;" class="d-flex align-items-center" color="primary">edit</mat-icon>
+          {{'edit' | titlecase}}
+        </button>
+        <button mat-menu-item (click)="toggleFilterYear('delete')">
+          <mat-icon matSuffix style="font-size: 16px;" class="d-flex align-items-center" color="primary">delete</mat-icon>
+
+          {{'delete' | titlecase}}
+        </button>
+      </mat-menu>
+
+    </li>
+  </ul>
+
+  <stepper-status [progress]="75" [labels]="['Planning','Design','Development','Testing']" [postionActive]="3"/>
+
+
+  <div class="project-hours d-flex justify-content-between mt-4 mb-1">
+    <span>Project Total Hours: 384 hrs</span>
+    <span>Project Hours Left: 144 hrs</span>
+  </div>
+</section>

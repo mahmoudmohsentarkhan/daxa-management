@@ -1,0 +1,88 @@
+<section styleSection>
+  <title-section title="Billing Information" />
+  <form class="row g-4">
+      <div class="col-12 col-md-6">
+        <label> Customer Name </label>
+        <mat-form-field >
+        <mat-label>your name</mat-label>
+        <input matInput placeholder="E.g Mahmoud Mohsen">
+        </mat-form-field>
+      </div>
+      <div class="col-12 col-md-6">
+        <label> phone number </label>
+        <mat-form-field >
+        <mat-label>your phone</mat-label>
+        <input matInput placeholder="E.g Mahmoud Mohsen">
+        </mat-form-field>
+      </div>
+      <div class="col-12 col-md-6">
+        <label> email address </label>
+        <mat-form-field >
+        <mat-label>your email address</mat-label>
+        <input matInput placeholder="E.g Mahmoud Mohsen">
+        </mat-form-field>
+      </div>
+      <div class="col-12 col-md-6">
+        <label> state</label>
+        <mat-form-field>
+          <mat-label>your state</mat-label>
+          <mat-select [value]="states[2]">
+            @for (state of states; track state) {
+              <mat-option [value]="state">{{state}}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-12 col-md-6">
+        <label>city</label>
+        <mat-form-field>
+          <mat-label>your city</mat-label>
+          <mat-select [value]="cities[2]">
+            @for (city of cities; track city) {
+              <mat-option [value]="city">{{city}}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-12 col-md-6">
+        <label> ZIP / Postcode </label>
+        <mat-form-field >
+        <mat-label>Your zip / postcode</mat-label>
+        <input matInput placeholder="E.g Mahmoud Mohsen">
+        </mat-form-field>
+      </div>
+      <div class="col-12 col-md-6">
+        <label> Street Address</label>
+        <mat-form-field >
+        <mat-label>Your Street Address</mat-label>
+        <input matInput placeholder="E.g Mahmoud Mohsen">
+        </mat-form-field>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label> coutry </label>
+        <mat-form-field>
+          <mat-label>your coutry</mat-label>
+          <mat-select [value]="coutries[2]">
+            @for (coutry of coutries; track coutry) {
+              <mat-option [value]="coutry">{{coutry}}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <label> Order Note (optional) </label>
+        <mat-form-field>
+          <mat-label>Write your note here....</mat-label>
+          <textarea matInput rows="6" placeholder="E.g. It makes me feel..." he></textarea>
+        </mat-form-field>
+      </div>
+      <div class="col-12 col-md-3">
+        <button mat-flat-button >{{isCheckout()?'Proceed To Checkout':'create order'}}</button>
+      </div>
+      <div class="col-12 col-md-3">
+        <button mat-flat-button class="cancel">cancel</button>
+      </div>
+  </form>
+</section>

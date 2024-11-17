@@ -1,0 +1,18 @@
+<section>
+    <div class="d-flex justify-content-between">
+      <div class="title">
+        {{title() | titlecase}}
+        <span>{{stats()}}</span>
+      </div>
+      <div class="apx-chart">
+        <ng-content></ng-content>
+      </div>
+    </div>
+    <ul class="d-flex justify-content-between">
+      <li>
+        <stock-arrow [rate]="0.2"/>
+      </li>
+      <li>This Week</li>
+    </ul>
+
+</section>

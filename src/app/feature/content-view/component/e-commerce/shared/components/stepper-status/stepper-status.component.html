@@ -1,0 +1,26 @@
+<section [ngClass]="{'custome': whiteBackGround()}">
+
+  @if (title()) {<h6>{{title()}}</h6>}
+  <ul class="project-status d-flex justify-content-between">
+    @for (label of labels(); track $index) {
+    <li [ngClass]="{'custome': whiteBackGround()}">
+      <span class="d-block position" [ngClass]="{'active': postionActive() == $index+1}">0{{$index+1}}</span>
+      {{label}}
+      <br>
+      <span class="sublabel">{{sublabels()[$index]}}</span>
+    </li>
+  }
+
+  </ul>
+  @if (progress()) {
+    <div class="my-progress mt-4">
+      <ul class="d-flex justify-content-between">
+        <li class="flex-grow-1">0%</li>
+        <li class="flex-grow-1">50%</li>
+        <li class="flex-grow-1">75%</li>
+        <li class="flex-grow-1">100%</li>
+      </ul>
+        <app-progress-bar [percentage]="progress()" [hideLabel]="true"/>
+    </div>
+  }
+</section>

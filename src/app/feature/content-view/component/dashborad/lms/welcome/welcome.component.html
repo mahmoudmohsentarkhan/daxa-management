@@ -1,0 +1,28 @@
+<section styleSection class="d-flex">
+  <div class="content">
+    <div class="data mb-2">September 3, 2024</div>
+    <h6 class="mb-2">Welcome Back! Daxa</h6>
+    <p>Learning Management System Dashboard.</p>
+    <b>Daily Performance</b>
+    <div class="chart">
+      <div class="apx-chart">
+        @if (
+          chartOptions && chartOptions.series && chartOptions.chart &&
+          chartOptions.colors && chartOptions.plotOptions
+          ) {
+          <apx-chart
+          [series]="chartOptions.series"
+          [chart]="chartOptions.chart"
+          [colors]="chartOptions.colors"
+          [plotOptions]="chartOptions.plotOptions"
+        />
+        }
+
+      </div>
+    </div>
+  </div>
+  <div class="img">
+    <img src="https://angular.hibootstrap.com/daxa/images/welcome.png" alt="">
+  </div>
+
+</section>

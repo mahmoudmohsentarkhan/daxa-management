@@ -1,0 +1,11 @@
+section{
+  background-color: #7569f2 !important;
+  color: #fff !important;
+}
+::ng-deep{
+  menu-list.color-white{
+    .mat-mdc-button{
+      color: #fff !important;
+    }
+  }
+}

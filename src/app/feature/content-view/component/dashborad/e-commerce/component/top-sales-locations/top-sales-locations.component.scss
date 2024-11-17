@@ -1,0 +1,25 @@
+section {
+  div{
+    display: flex;
+    gap: 10px;
+    .map {
+      img {
+        width: 100%;
+      }
+    }
+    ul.countries {
+      min-width: 170px;
+      font-size: 14px;
+      color: #999;
+      li {
+        text-transform: capitalize !important;
+        margin-bottom: 5px;
+        span {
+          font-size: 16px;
+          color: #555;
+        }
+        &:last-child{margin-bottom: 0;}
+      }
+    }
+  }
+}

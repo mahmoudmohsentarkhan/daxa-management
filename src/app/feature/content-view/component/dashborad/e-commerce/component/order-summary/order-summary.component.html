@@ -1,0 +1,28 @@
+<section styleSection>
+  <title-section title="order summary">
+    <menu-list  #altContent/>
+  </title-section>
+  <ul class="info d-flex justify-content-between">
+    <li>completed 60%</li>
+    <li>new order 30%</li>
+    <li>pending 10%</li>
+  </ul>
+    @if(
+      chartOptions &&
+      chartOptions.seriesN && chartOptions.chart && chartOptions.labels &&
+      chartOptions.responsive && chartOptions.tooltip && chartOptions.dataLabels &&
+      chartOptions.legend && chartOptions.colors
+      ){
+      <apx-chart
+      [series]="chartOptions.seriesN"
+      [chart]="chartOptions.chart"
+      [labels]="chartOptions.labels"
+      [responsive]="chartOptions.responsive"
+      [tooltip]="chartOptions.tooltip"
+      [dataLabels]="chartOptions.dataLabels"
+      [legend]="chartOptions.legend"
+      [colors]="chartOptions.colors"
+    />
+  }
+
+</section>

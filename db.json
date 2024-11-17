@@ -1,0 +1,2037 @@
+{
+  "instructors": [
+    {
+      "id": "15456",
+      "name": "Mark Stjohn",
+      "rate": 5,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user6.jpg"
+    },
+    {
+      "id": "65768",
+      "name": "Joan Stanley",
+      "rate": 4,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user7.jpg"
+    },
+    {
+      "id": "87878",
+      "name": "Jacob Bell",
+      "rate": 3,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user8.jpg"
+    },
+    {
+      "id": "45770",
+      "name": "Donald Bryan",
+      "rate": 5,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user9.jpg"
+    },
+    {
+      "id": "78790",
+      "name": "Kristina Blomquist",
+      "rate": 4,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user10.jpg"
+    },
+    {
+      "id": "98542",
+      "name": "Jeffrey Morrison",
+      "rate": 5,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user11.jpg"
+    }
+  ],
+  "contact": [
+    {
+      "id": "1217",
+      "name": "Carlos Daley",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user1.jpg",
+      "email": "carlos@daxa.com",
+      "phone": "+1 555-123-4567",
+      "lastContacted": "Nov 10, 2024",
+      "company": "ABC Corporation",
+      "leadScore": 50,
+      "status": "active"
+    },
+    {
+      "id": "9513",
+      "name": "Dorothy Young",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user2.jpg",
+      "email": "dorothy@daxa.com",
+      "phone": "+1 555-987-6543",
+      "lastContacted": "Nov 12, 2024",
+      "company": "XYZ Ltd",
+      "leadScore": 35,
+      "status": "active"
+    },
+    {
+      "id": "7513",
+      "name": "Greg Woody",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user3.jpg",
+      "email": "greg@daxa.com",
+      "phone": "+1 555-456-7890",
+      "lastContacted": "Nov 12, 2024",
+      "company": "Tech Solutions",
+      "leadScore": 40,
+      "status": "deactive"
+    },
+    {
+      "id": "3579",
+      "name": "Deborah Rosol",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user4.jpg",
+      "email": "deborah@daxa.com",
+      "phone": "+1 555-369-7878",
+      "lastContacted": "Nov 13, 2024",
+      "company": "Global Solutions",
+      "leadScore": 25,
+      "status": "active"
+    },
+    {
+      "id": "4826",
+      "name": "Kendall Allen",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user5.jpg",
+      "email": "kendall@daxa.com",
+      "phone": "+1 555-658-4488",
+      "lastContacted": "Nov 14, 2024",
+      "company": "Acma Industries",
+      "leadScore": 35,
+      "status": "active"
+    },
+    {
+      "id": "1324",
+      "name": "Mark Stjohn",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user6.jpg",
+      "email": "mark@daxa.com",
+      "phone": "+1 555-558-9966",
+      "lastContacted": "Nov 15, 2024",
+      "company": "Synergy Ltd",
+      "leadScore": 25,
+      "status": "deactive"
+    },
+    {
+      "id": "1217",
+      "name": "Carlos Daley",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user1.jpg",
+      "email": "carlos@daxa.com",
+      "phone": "+1 555-123-4567",
+      "lastContacted": "Nov 10, 2024",
+      "company": "ABC Corporation",
+      "leadScore": 50,
+      "status": "active"
+    },
+    {
+      "id": "9513",
+      "name": "Dorothy Young",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user2.jpg",
+      "email": "dorothy@daxa.com",
+      "phone": "+1 555-987-6543",
+      "lastContacted": "Nov 12, 2024",
+      "company": "XYZ Ltd",
+      "leadScore": 35,
+      "status": "active"
+    },
+    {
+      "id": "7513",
+      "name": "Greg Woody",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user3.jpg",
+      "email": "greg@daxa.com",
+      "phone": "+1 555-456-7890",
+      "lastContacted": "Nov 12, 2024",
+      "company": "Tech Solutions",
+      "leadScore": 40,
+      "status": "deactive"
+    },
+    {
+      "id": "3579",
+      "name": "Deborah Rosol",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user4.jpg",
+      "email": "deborah@daxa.com",
+      "phone": "+1 555-369-7878",
+      "lastContacted": "Nov 13, 2024",
+      "company": "Global Solutions",
+      "leadScore": 25,
+      "status": "active"
+    },
+    {
+      "id": "4826",
+      "name": "Kendall Allen",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user5.jpg",
+      "email": "kendall@daxa.com",
+      "phone": "+1 555-658-4488",
+      "lastContacted": "Nov 14, 2024",
+      "company": "Acma Industries",
+      "leadScore": 35,
+      "status": "active"
+    },
+    {
+      "id": "1324",
+      "name": "Mark Stjohn",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user6.jpg",
+      "email": "mark@daxa.com",
+      "phone": "+1 555-558-9966",
+      "lastContacted": "Nov 15, 2024",
+      "company": "Synergy Ltd",
+      "leadScore": 25,
+      "status": "deactive"
+    }
+  ],
+  "courses": [
+    {
+      "id": "452",
+      "courseName": "Introduction to python",
+      "catigory": "Technology",
+      "instructor": "Ann Cohen",
+      "enrolledStudents": 90,
+      "startDate": "01 Aug, 2024",
+      "endDate": "30 Dec, 2024",
+      "price": 30
+    },
+    {
+      "id": "784",
+      "courseName": "Data science fundamentals",
+      "catigory": "Science",
+      "instructor": "Lea Lewis",
+      "enrolledStudents": 120,
+      "startDate": "15 Aug, 2024",
+      "endDate": "15 Dec, 2024",
+      "price": 45
+    },
+    {
+      "id": "147",
+      "courseName": "Graphic design basics",
+      "catigory": "Arts & design",
+      "instructor": "Lillie Walker",
+      "enrolledStudents": 80,
+      "startDate": "01 Sep, 2024",
+      "endDate": "30 Nov, 2024",
+      "price": 90
+    },
+    {
+      "id": "753",
+      "courseName": "Web development basics",
+      "catigory": "Technology",
+      "instructor": "Lynn Flinn",
+      "enrolledStudents": 96,
+      "startDate": "15 Sep, 2024",
+      "endDate": "30 Dec, 2024",
+      "price": 55
+    },
+    {
+      "id": "257",
+      "courseName": "Business finance",
+      "catigory": "Business",
+      "instructor": "Mark Rivera",
+      "enrolledStudents": 70,
+      "startDate": "01 Oct, 2024",
+      "endDate": "30 Dec, 2024",
+      "price": 36
+    },
+    {
+      "id": "753",
+      "courseName": "Advanced app development",
+      "catigory": "Technology",
+      "instructor": "Chad Campos",
+      "enrolledStudents": 59,
+      "startDate": "15 Oct, 2024",
+      "endDate": "30 Dec, 2024",
+      "price": 72
+    }
+  ],
+  "category":[
+    {
+      "id": 1,
+      "name": "watch",
+      "totalProducts": 54,
+      "slug": "watch",
+      "description": "what is lorem ipsum?",
+      "status": "active",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product1.png"
+    },
+    {
+      "id": 2,
+      "name": "mobile",
+      "totalProducts": 13,
+      "slug": "mobile",
+      "description": "why do we use it?",
+      "status": "active",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product2.png"
+    },
+    {
+      "id": 3,
+      "name": "laptop",
+      "totalProducts": 42,
+      "slug": "laptop",
+      "description": "where does it come from?",
+      "status": "deactive",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product3.png"
+    },
+    {
+      "id": 4,
+      "name": "man",
+      "totalProducts": 32,
+      "slug": "man",
+      "description": "where can i get some?",
+      "status": "active",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product4.png"
+    },
+    {
+      "id": 5,
+      "name": "headphone",
+      "totalProducts": 100,
+      "slug": "headphone",
+      "description": "contrary to popular belief",
+      "status": "deactive",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product5.png"
+    },
+    {
+      "id": 6,
+      "name": "yellow watch",
+      "totalProducts": 22,
+      "slug": "yellow-watch",
+      "description": "there are many variations",
+      "status": "active",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product6.png"
+    },
+    {
+      "id": 7,
+      "name": "red laptop",
+      "totalProducts": 64,
+      "slug": "red-laptop",
+      "description": "the standard chunk of lorem",
+      "status": "active",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product7.png"
+    },
+    {
+      "id": 8,
+      "name": "shoe",
+      "totalProducts": 52,
+      "slug": "shoe",
+      "description": "non-characteristic words etc",
+      "status": "deactive",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product8.png"
+    },
+    {
+      "id": 9,
+      "name": "bag",
+      "totalProducts": 99,
+      "slug": "bag",
+      "description": "can you help translate this",
+      "status": "active",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product9.png"
+    },
+    {
+      "id": 10,
+      "name": "jewelry",
+      "totalProducts": 34,
+      "slug": "jewelry",
+      "description": "if you use this site regularly",
+      "status": "active",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product10.png"
+    }
+  ],
+  "course-category": [
+    {
+      "id": "1",
+      "name": "Technology",
+      "subtitle": "24",
+      "enrolled": 351,
+      "img": "https://angular.hibootstrap.com/daxa/images/courses/course1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Business",
+      "subtitle": "75",
+      "enrolled": 654,
+      "img": "https://angular.hibootstrap.com/daxa/images/courses/course2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Language",
+      "subtitle": "54",
+      "enrolled": 879,
+      "img": "https://angular.hibootstrap.com/daxa/images/courses/course3.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Science",
+      "subtitle": "25",
+      "enrolled": 1213,
+      "img": "https://angular.hibootstrap.com/daxa/images/courses/course4.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Arts & Design",
+      "subtitle": "14",
+      "enrolled": 78787,
+      "img": "https://angular.hibootstrap.com/daxa/images/courses/course5.jpg"
+    },
+    {
+      "id": "6",
+      "name": "UI/UX",
+      "subtitle": "32",
+      "enrolled": 1456,
+      "img": "https://angular.hibootstrap.com/daxa/images/courses/course6.jpg"
+    },
+    {
+      "id": "7",
+      "name": "UI/UX",
+      "subtitle": "95",
+      "enrolled": 789,
+      "img": "https://angular.hibootstrap.com/daxa/images/courses/course7.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Science",
+      "subtitle": "12",
+      "enrolled": 954,
+      "img": "https://angular.hibootstrap.com/daxa/images/courses/course8.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Business",
+      "subtitle": "78",
+      "enrolled": 753,
+      "img": "https://angular.hibootstrap.com/daxa/images/courses/course9.jpg"
+    }
+  ],
+  "student-progress-course": [
+    {
+      "id": "234",
+      "name": "Andrew Allen",
+      "courseName": "Introduction to Python",
+      "progress": 95
+    },
+    {
+      "id": "456",
+      "name": "Russell Colon",
+      "courseName": "Web Development",
+      "progress": 90
+    },
+    {
+      "id": "954",
+      "name": "Cecil Batts",
+      "courseName": "Data Science",
+      "progress": 80
+    },
+    {
+      "id": "123",
+      "name": "Linda Ball",
+      "courseName": "Graphic Design Basics",
+      "progress": 70
+    },
+    {
+      "id": "456",
+      "name": "Frank Mele",
+      "courseName": "Business Finance",
+      "progress": 60
+    },
+    {
+      "id": "234",
+      "name": "Andrew Allen",
+      "courseName": "Introduction to Python",
+      "progress": 95
+    },
+    {
+      "id": "456",
+      "name": "Russell Colon",
+      "courseName": "Web Development",
+      "progress": 90
+    },
+    {
+      "id": "954",
+      "name": "Cecil Batts",
+      "courseName": "Data Science",
+      "progress": 80
+    },
+    {
+      "id": "123",
+      "name": "Linda Ball",
+      "courseName": "Graphic Design Basics",
+      "progress": 70
+    },
+    {
+      "id": "456",
+      "name": "Frank Mele",
+      "courseName": "Business Finance",
+      "progress": 60
+    }
+  ],
+  "client-payment-status": {
+    "data": [
+      300,
+      200,
+      150
+    ],
+    "label": [
+      "Paid",
+      "pending",
+      "Overdue"
+    ]
+  },
+  "earning-reports": {
+    "data": [
+      23,
+      42,
+      35,
+      27,
+      43,
+      22,
+      17,
+      31,
+      22,
+      22
+    ],
+    "label": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct"
+    ]
+  },
+  "country-stats": [
+    {
+      "flag": "https://angular.hibootstrap.com/daxa/images/flags/usa.png",
+      "country": "United States",
+      "users": 9562,
+      "id": "91c3"
+    },
+    {
+      "flag": "https://angular.hibootstrap.com/daxa/images/flags/china.png",
+      "country": "China",
+      "users": 18426,
+      "id": "db26"
+    },
+    {
+      "flag": "https://angular.hibootstrap.com/daxa/images/flags/germany.png",
+      "country": "Germany",
+      "users": 4753,
+      "id": "44a1"
+    },
+    {
+      "flag": "https://angular.hibootstrap.com/daxa/images/flags/australia.png",
+      "country": "Australia",
+      "users": 2657,
+      "id": "083f"
+    }
+  ],
+  "leads-list": [
+    {
+      "icon": "share",
+      "name": "social",
+      "color": "#0f79f3",
+      "users": 9562,
+      "id": "a8f7"
+    },
+    {
+      "icon": "email",
+      "name": "email",
+      "color": "#00cae3",
+      "users": 18426,
+      "id": "1ef6"
+    },
+    {
+      "icon": "call",
+      "name": "call",
+      "color": "#7986f7",
+      "users": 4753,
+      "id": "0628"
+    },
+    {
+      "icon": "category",
+      "name": "others",
+      "color": "#ffb264",
+      "users": 2657,
+      "id": "bdef"
+    }
+  ],
+  "most-lead": {
+    "data": [
+      55,
+      25,
+      12,
+      8
+    ],
+    "label": []
+  },
+  "recent-leads": [
+    {
+      "id": "1217",
+      "name": "Carlos Daley",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user1.jpg",
+      "email": "carlos@daxa.com",
+      "source": "Website",
+      "status": "Shipped"
+    },
+    {
+      "id": "9513",
+      "name": "Dorothy Young",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user2.jpg",
+      "email": "dorothy@daxa.com",
+      "source": "Referral",
+      "status": "Confirmed"
+    },
+    {
+      "id": "7513",
+      "name": "Greg Woody",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user3.jpg",
+      "email": "greg@daxa.com",
+      "source": "Cold Call",
+      "status": "rejected"
+    },
+    {
+      "id": "3579",
+      "name": "Deborah Rosol",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user4.jpg",
+      "email": "deborah@daxa.com",
+      "source": "Email Campaign",
+      "status": "pending"
+    },
+    {
+      "id": "4826",
+      "name": "Kendall Allen",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user5.jpg",
+      "email": "kendall@daxa.com",
+      "source": "Online Store",
+      "status": "rejected"
+    },
+    {
+      "id": "1324",
+      "name": "Mark Stjohn",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user6.jpg",
+      "email": "mark@daxa.com",
+      "source": "Online Store",
+      "status": "Shipped"
+    },
+    {
+      "id": "6235",
+      "name": "Joan Stanley",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user7.jpg",
+      "email": "joan@daxa.com",
+      "source": "Email Campaign",
+      "status": "Confirmed"
+    },
+    {
+      "id": "4532",
+      "name": "Jacob Bell",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user8.jpg",
+      "email": "jacob@daxa.com",
+      "source": "Cold Call",
+      "status": "Shipped"
+    },
+    {
+      "id": "1342",
+      "name": "Donald Bryan",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user9.jpg",
+      "email": "donald@daxa.com",
+      "source": "Referral",
+      "status": "pending"
+    },
+    {
+      "id": "5313",
+      "name": "Kristina Blomquist",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user10.jpg",
+      "email": "kristina@daxa.com",
+      "source": "Website",
+      "status": "Shipped"
+    }
+  ],
+  "top-customers": [
+    {
+      "id": "15456",
+      "name": "mark stjohn",
+      "rate": 5,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user6.jpg"
+    },
+    {
+      "id": "65347",
+      "name": "joan stanley",
+      "rate": 3,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user7.jpg"
+    },
+    {
+      "id": "42345",
+      "name": "jacob bell",
+      "rate": 2,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user8.jpg"
+    },
+    {
+      "id": "98764",
+      "name": "donald bryan",
+      "rate": 4,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user9.jpg"
+    },
+    {
+      "id": "75456",
+      "name": "kristina blomquist",
+      "rate": 4,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user10.jpg"
+    }
+  ],
+  "average-daily-sales": {
+    "data": [
+      22,
+      23,
+      10,
+      28,
+      16,
+      21,
+      30
+    ],
+    "label": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun"
+    ]
+  },
+  "order-summary": {
+    "data": [
+      60,
+      30,
+      10
+    ],
+    "label": [
+      "Completed",
+      "New Order",
+      "pending"
+    ]
+  },
+  "profit": {
+    "data": [
+      10,
+      41,
+      35,
+      51,
+      49,
+      62,
+      69,
+      91
+    ],
+    "label": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug"
+    ]
+  },
+  "projects-roadmap": {
+    "data": [
+      45,
+      40,
+      52,
+      63,
+      80,
+      88
+    ],
+    "label": [
+      "Project Planning",
+      "Requirement",
+      "Design",
+      "Development",
+      "Testing and QA",
+      "Post-Launch"
+    ]
+  },
+  "customer":[
+    {
+      "id": "#ARP-1217",
+      "name": "Marcia Baker",
+      "email": "marcia@example.com",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user15.jpg",
+      "phone": "+1 555-123-4567",
+      "lastLogin": "Nov 10, 2024",
+      "totalSpand": "6855",
+      "totalOrder": "125",
+      "status": "Active"
+    },
+    {
+      "id": "#ARP-1364",
+      "name": "Carolyn Barnes",
+      "email": "barnes@example.com",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user7.jpg",
+      "phone": "+1 555-987-6543",
+      "lastLogin": "Nov 11, 2024",
+      "totalSpand": "258",
+      "totalOrder": "99",
+      "status": "Active"
+    },
+    {
+      "id": "#ARP-2951",
+      "name": "Donna Miller",
+      "email": "donna@example.com",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user12.jpg",
+      "phone": "+1 555-456-7890",
+      "lastLogin": "Nov 12, 2024",
+      "totalSpand": "3890",
+      "totalOrder": "145",
+      "status": "Active"
+    },
+    {
+      "id": "#ARP-7342",
+      "name": "Barbara Cross",
+      "email": "cross@example.com",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user5.jpg",
+      "phone": "+1 555-369-7878",
+      "lastLogin": "Nov 13, 2024",
+      "totalSpand": "2500",
+      "totalOrder": "279",
+      "status": "Active"
+    },
+    {
+      "id": "#ARP-4619",
+      "name": "Rebecca Block",
+      "email": "block@example.com",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user16.jpg",
+      "phone": "+1 555-658-4488",
+      "lastLogin": "Nov 14, 2024",
+      "totalSpand": "8200",
+      "totalOrder": "169",
+      "status": "Deactive"
+    },
+    {
+      "id": "#ARP-7346",
+      "name": "Ramiro McCarty",
+      "email": "ramiro@example.com",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user9.jpg",
+      "phone": "+1 555-558-9966",
+      "lastLogin": "Nov 15, 2024",
+      "totalSpand": "640",
+      "totalOrder": "46",
+      "status": "Active"
+    },
+    {
+      "id": "#ARP-7612",
+      "name": "Robert Fairweather",
+      "email": "robert@example.com",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user1.jpg",
+      "phone": "+1 555-357-5888",
+      "lastLogin": "Nov 16, 2024",
+      "totalSpand": "9100",
+      "totalOrder": "184",
+      "status": "Active"
+    },
+    {
+      "id": "#ARP-7642",
+      "name": "Marcelino Haddock",
+      "email": "haddock@example.com",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user6.jpg",
+      "phone": "+1 555-456-8877",
+      "lastLogin": "Nov 17, 2024",
+      "totalSpand": "7300",
+      "totalOrder": "166",
+      "status": "Active"
+    },
+    {
+      "id": "#ARP-4652",
+      "name": "Thomas Wilson",
+      "email": "wildon@example.com",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user13.jpg",
+      "phone": "+1 555-622-4488",
+      "lastLogin": "Nov 18, 2024",
+      "totalSpand": "6600",
+      "totalOrder": "75",
+      "status": "Active"
+    },
+    {
+      "id": "#ARP-7895",
+      "name": "Nathaniel Hulsey",
+      "email": "hulsey@example.com",
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user14.jpg",
+      "phone": "+1 555-225-4488",
+      "lastLogin": "Nov 19, 2024",
+      "totalSpand": "2800",
+      "totalOrder": "55",
+      "status": "Deactive"
+    }
+  ],
+  "top-sales": [
+    {
+      "name": "united states",
+      "img": "https://angular.hibootstrap.com/daxa/images/flags/usa.png",
+      "percentage": 85,
+      "id": "519d"
+    },
+    {
+      "name": "china",
+      "img": "https://angular.hibootstrap.com/daxa/images/flags/china.png",
+      "percentage": 60,
+      "id": "d0bf"
+    },
+    {
+      "name": "australia",
+      "img": "https://angular.hibootstrap.com/daxa/images/flags/australia.png",
+      "percentage": 70,
+      "id": "99ad"
+    },
+    {
+      "name": "germany",
+      "img": "https://angular.hibootstrap.com/daxa/images/flags/germany.png",
+      "percentage": 75,
+      "id": "2739"
+    },
+    {
+      "name": "canada",
+      "img": "https://angular.hibootstrap.com/daxa/images/flags/canada.png",
+      "percentage": 80,
+      "id": "83a3"
+    }
+  ],
+  "seller":[
+    {
+      "id": 1,
+      "name": "Milton Jones",
+      "store": "TechMaster Store",
+      "LastSaleDate": "2024-11-25",
+      "stock": 50,
+      "walletBalance": 9999.50,
+      "revenue": 5999.50,
+      "img": "https://angular.hibootstrap.com/daxa/images/sellers/seller1.png"
+    },
+    {
+      "id": 2,
+      "name": "Victoria Hopkins",
+      "store": "RisionTech Outlet",
+      "LastSaleDate": "2024-11-01",
+      "stock": 39,
+      "walletBalance": 6756.50,
+      "revenue": 4645.50,
+      "img": "https://angular.hibootstrap.com/daxa/images/sellers/seller2.png"
+    },
+    {
+      "id": 3,
+      "name": "Venessa Jones",
+      "store": "ComfotLiving",
+      "LastSaleDate": "2024-09-30",
+      "stock": 75,
+      "walletBalance": 5550.00,
+      "revenue": 4350.50,
+      "img": "https://angular.hibootstrap.com/daxa/images/sellers/seller3.png"
+    },
+    {
+      "id": 4,
+      "name": "Roosevelt Hall",
+      "store": "SportFit Store",
+      "LastSaleDate": "2024-08-01",
+      "stock": 99,
+      "walletBalance": 2100.50,
+      "revenue": 1500.50,
+      "img": "https://angular.hibootstrap.com/daxa/images/sellers/seller4.png"
+    },
+    {
+      "id": 5,
+      "name": "Ralph Velasquez",
+      "store": "Velas Store",
+      "LastSaleDate": "2024-07-25",
+      "stock": 350,
+      "walletBalance": 15250.50,
+      "revenue": 10200.50,
+      "img": "https://angular.hibootstrap.com/daxa/images/sellers/seller5.png"
+    },
+    {
+      "id": 6,
+      "name": "Ellen Hernandez",
+      "store": "Herna Store",
+      "LastSaleDate": "2024-07-10",
+      "stock": 200,
+      "walletBalance": 10500.50,
+      "revenue": 5458.50,
+      "img": "https://angular.hibootstrap.com/daxa/images/sellers/seller6.png"
+    },
+    {
+      "id": 7,
+      "name": "Donald Qualls",
+      "store": "Dona Store",
+      "LastSaleDate": "2024-06-25",
+      "stock": 80,
+      "walletBalance": 2580.00,
+      "revenue": 1500.00,
+      "img": "https://angular.hibootstrap.com/daxa/images/sellers/seller7.png"
+    },
+    {
+      "id": 8,
+      "name": "David Williamson",
+      "store": "Willi Dav Store",
+      "LastSaleDate": "2024-05-20",
+      "stock": 150,
+      "walletBalance": 9000.00,
+      "revenue": 6000.00,
+      "img": "https://angular.hibootstrap.com/daxa/images/sellers/seller8.png"
+    },
+    {
+      "id": 9,
+      "name": "Rocky O'Donnell",
+      "store": "Donne Store",
+      "LastSaleDate": "2024-04-30",
+      "stock": 75,
+      "walletBalance": 7500.50,
+      "revenue": 4500.50,
+      "img": "https://angular.hibootstrap.com/daxa/images/sellers/seller9.png"
+    },
+    {
+      "id": 10,
+      "name": "Richard Brumfield",
+      "store": "RichMaster Store",
+      "LastSaleDate": "2024-04-01",
+      "stock": 500,
+      "walletBalance": 18500.00,
+      "revenue": 13200.00,
+      "img": "https://angular.hibootstrap.com/daxa/images/sellers/seller10.png"
+    },
+    {
+      "id": 11,
+      "name": "Dallas Jones",
+      "store": "Dajon Store",
+      "LastSaleDate": "2024-03-25",
+      "stock": 50,
+      "walletBalance": 6300.50,
+      "revenue": 4000.50,
+      "img": "https://angular.hibootstrap.com/daxa/images/sellers/seller11.png"
+    },
+    {
+      "id": 12,
+      "name": "Barbara Marshall",
+      "store": "Barbahall Store",
+      "LastSaleDate": "2024-03-05",
+      "stock": 99,
+      "walletBalance": 3699.50,
+      "revenue": 2599.50,
+      "img": "https://angular.hibootstrap.com/daxa/images/sellers/seller12.png"
+    }
+  ],
+  "top-sellers": [
+    {
+      "id": "15456",
+      "name": "mark stjohn",
+      "rate": 5,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user6.jpg"
+    },
+    {
+      "id": "65347",
+      "name": "joan stanley",
+      "rate": 3,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user7.jpg"
+    },
+    {
+      "id": "42345",
+      "name": "jacob bell",
+      "rate": 2,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user8.jpg"
+    },
+    {
+      "id": "98764",
+      "name": "donald bryan",
+      "rate": 4,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user9.jpg"
+    },
+    {
+      "id": "75456",
+      "name": "kristina blomquist",
+      "rate": 4,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user10.jpg"
+    }
+  ],
+  "file-projects": [
+    {
+      "name": "HB Template",
+      "imgIcon": "https://angular.hibootstrap.com/daxa/images/icons/png.png",
+      "fileItems": 159,
+      "fileSize": "4.5 GB",
+      "id": "2cd7"
+    },
+    {
+      "name": "React Template",
+      "imgIcon": "https://angular.hibootstrap.com/daxa/images/icons/jpg.png",
+      "fileItems": 522,
+      "fileSize": "5.5 GB",
+      "id": "084e"
+    },
+    {
+      "name": "Material UI",
+      "imgIcon": "https://angular.hibootstrap.com/daxa/images/icons/txt.png",
+      "fileItems": 995,
+      "fileSize": "7.5 GB",
+      "id": "ca62"
+    },
+    {
+      "name": "WP Themes",
+      "imgIcon": "https://angular.hibootstrap.com/daxa/images/icons/pdf.png",
+      "fileItems": 39,
+      "fileSize": "3.8 GB",
+      "id": "b749"
+    },
+    {
+      "name": "Personal Photos",
+      "imgIcon": "https://angular.hibootstrap.com/daxa/images/icons/xl4.png",
+      "fileItems": 75,
+      "fileSize": "2.2 GB",
+      "id": "9af3"
+    },
+    {
+      "name": "Mobile Apps",
+      "imgIcon": "https://angular.hibootstrap.com/daxa/images/icons/doc.png",
+      "fileItems": 357,
+      "fileSize": "8.5 GB",
+      "id": "a931"
+    },
+    {
+      "name": "Important Files",
+      "imgIcon": "https://angular.hibootstrap.com/daxa/images/icons/png.png",
+      "fileItems": 159,
+      "fileSize": "4.5 GB",
+      "id": "3fe1"
+    },
+    {
+      "name": "Angular Template",
+      "imgIcon": "https://angular.hibootstrap.com/daxa/images/icons/jpg.png",
+      "fileItems": 522,
+      "fileSize": "5.5 GB",
+      "id": "ebd1"
+    },
+    {
+      "name": "Projects",
+      "imgIcon": "https://angular.hibootstrap.com/daxa/images/icons/txt.png",
+      "fileItems": 995,
+      "fileSize": "7.5 GB",
+      "id": "9493"
+    },
+    {
+      "name": "Documents",
+      "imgIcon": "https://angular.hibootstrap.com/daxa/images/icons/pdf.png",
+      "fileItems": 39,
+      "fileSize": "3.8 GB",
+      "id": "1dd6"
+    },
+    {
+      "name": "Media",
+      "imgIcon": "https://angular.hibootstrap.com/daxa/images/icons/xl4.png",
+      "fileItems": 75,
+      "fileSize": "2.2 GB",
+      "id": "c669"
+    },
+    {
+      "name": "Applications",
+      "imgIcon": "https://angular.hibootstrap.com/daxa/images/icons/doc.png",
+      "fileItems": 357,
+      "fileSize": "8.5 GB",
+      "id": "f9ea"
+    }
+  ],
+  "active-students": {
+    "data": [
+      [
+        10,
+        50,
+        14,
+        36,
+        98,
+        15,
+        64,
+        78,
+        94,
+        76
+      ],
+      [
+        15,
+        22,
+        14,
+        36,
+        98,
+        15,
+        64,
+        78,
+        94,
+        76
+      ],
+      [
+        25,
+        20,
+        10,
+        56,
+        48,
+        35,
+        44,
+        58,
+        44,
+        86
+      ]
+    ],
+    "label": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct"
+    ]
+  },
+  "time-spending": {
+    "data": [
+      [
+        55,
+        45,
+        35,
+        25,
+        15,
+        10,
+        5
+      ]
+    ],
+    "label": []
+  },
+  "orders": [
+    {
+      "id": "9513",
+      "nameProduct": "Mobile Phone",
+      "imgProduct": "https://angular.hibootstrap.com/daxa/images/products/product2.jpg",
+      "price": 20,
+      "nameCustomer": "Dorothy Young",
+      "imgCustomer": "https://angular.hibootstrap.com/daxa/images/users/user2.jpg",
+      "created": "14 Nov, 2024",
+      "quantity": 4,
+      "profit": 200,
+      "status": "Confirmed"
+    },
+    {
+      "id": "4826",
+      "nameProduct": "Headphones",
+      "imgProduct": "https://angular.hibootstrap.com/daxa/images/products/product5.jpg",
+      "price": 25,
+      "nameCustomer": "Kendall Allen",
+      "imgCustomer": "https://angular.hibootstrap.com/daxa/images/users/user5.jpg",
+      "created": "11 Nov, 2024",
+      "quantity": 4,
+      "profit": 789,
+      "status": "rejected"
+    },
+    {
+      "id": "6235",
+      "nameProduct": "Triblend T-shirt",
+      "imgProduct": "https://angular.hibootstrap.com/daxa/images/products/product7.jpg",
+      "price": 80,
+      "nameCustomer": "Joan Stanley",
+      "imgCustomer": "https://angular.hibootstrap.com/daxa/images/users/user7.jpg",
+      "created": "9 Nov, 2024",
+      "quantity": 1,
+      "profit": 785,
+      "status": "Confirmed"
+    }
+  ],
+  "tops-selling-products": [
+    {
+      "id": 1,
+      "title": "Smart Watch",
+      "soldQuantity": 953,
+      "itemCode": "#ARP-1217",
+      "price": 90954,
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product1.png"
+    },
+    {
+      "id": 2,
+      "title": "Mobile Phone",
+      "soldQuantity": 876,
+      "itemCode": "#ARP-9513",
+      "price": 85648,
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product2.png"
+    },
+    {
+      "id": 3,
+      "title": "Laptop Device",
+      "soldQuantity": 823,
+      "itemCode": "#ARP-7531",
+      "price": 79852,
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product3.png"
+    },
+    {
+      "id": 4,
+      "title": "Black T-Shirt",
+      "soldQuantity": 743,
+      "itemCode": "#ARP-3579",
+      "price": 73624,
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product4.png"
+    },
+    {
+      "id": 5,
+      "title": "Headphones",
+      "soldQuantity": 693,
+      "itemCode": "#ARP-4826",
+      "price": 65973,
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product5.png"
+    },
+    {
+      "id": 6,
+      "title": "Hand Watch",
+      "soldQuantity": 654,
+      "itemCode": "#ARP-1265",
+      "price": 42455,
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product6.png"
+    },
+    {
+      "id": 7,
+      "title": "Gaming Laptop",
+      "soldQuantity": 214,
+      "itemCode": "#ARP-7654",
+      "price": 75643,
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product7.png"
+    },
+    {
+      "id": 8,
+      "title": "Sports Shoes",
+      "soldQuantity": 342,
+      "itemCode": "#ARP-5678",
+      "price": 45678,
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product8.png"
+    },
+    {
+      "id": 9,
+      "title": "437 Handbag",
+      "soldQuantity": 953,
+      "itemCode": "#ARP-5424",
+      "price": 21453,
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product9.png"
+    },
+    {
+      "id": 10,
+      "title": "Luxury Rendering",
+      "soldQuantity": 524,
+      "itemCode": "#ARP-4312",
+      "price": 43242,
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product10.png"
+    },
+    {
+      "id": 11,
+      "title": "Hand Watch",
+      "soldQuantity": 654,
+      "itemCode": "#ARP-1265",
+      "price": 42455,
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product11.png"
+    },
+    {
+      "id": 12,
+      "title": "Gaming Laptop",
+      "soldQuantity": 214,
+      "itemCode": "#ARP-7654",
+      "price": 75643,
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product12.png"
+    }
+  ],
+  "prodcuts": [
+    {
+      "id": "1",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product1.jpg",
+      "name": "Luxury Rendering",
+      "soldQuantity": 91,
+      "price": 40,
+      "oldPrice": 45,
+      "rate": 4,
+      "itemCode": "854"
+    },
+    {
+      "id": "2",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product2.jpg",
+      "name": "Mobile Phone",
+      "soldQuantity": 47,
+      "price": 20,
+      "oldPrice": 25,
+      "rate": 5,
+      "itemCode": "987"
+    },
+    {
+      "id": "3",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product3.jpg",
+      "name": "Laptop Device",
+      "soldQuantity": 15,
+      "price": 90,
+      "oldPrice": 95,
+      "rate": 5,
+      "itemCode": "321"
+    },
+    {
+      "id": "4",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product4.jpg",
+      "name": "Black T-Shirt",
+      "soldQuantity": 78,
+      "price": 75,
+      "oldPrice": 80,
+      "rate": 1,
+      "itemCode": "321"
+    },
+    {
+      "id": "5",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product5.jpg",
+      "name": "Headphones",
+      "soldQuantity": 25,
+      "price": 30,
+      "oldPrice": 35,
+      "rate": 5,
+      "itemCode": "753"
+    },
+    {
+      "id": "6",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product6.jpg",
+      "name": "Hand Watch",
+      "soldQuantity": 43,
+      "price": 19,
+      "oldPrice": 25,
+      "rate": 2,
+      "itemCode": "147"
+    },
+    {
+      "id": "7",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product7.jpg",
+      "name": "Triblend T-shirt",
+      "soldQuantity": 75,
+      "price": 80,
+      "oldPrice": 85,
+      "rate": 3,
+      "itemCode": "987"
+    },
+    {
+      "id": "8",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product8.jpg",
+      "name": "Sports Shoes",
+      "soldQuantity": 19,
+      "price": 25,
+      "oldPrice": 30,
+      "rate": 4,
+      "itemCode": "524"
+    },
+    {
+      "id": "9",
+      "img": "https://angular.hibootstrap.com/daxa/images/products/product9.jpg",
+      "name": "437 Handbag",
+      "soldQuantity": 40,
+      "price": 33,
+      "oldPrice": 35,
+      "rate": 5,
+      "itemCode": "321"
+    }
+  ],
+  "projects": [
+    {
+      "id": "547",
+      "projectName": "Hotel management system",
+      "clint": "Vaxo Corporation",
+      "startDate": "15 Nov, 2024",
+      "endDate": "15 Dec, 2024",
+      "budget": 5250,
+      "status": "In Progress"
+    },
+    {
+      "id": "473",
+      "projectName": "Product development",
+      "clint": "Beja Ltd",
+      "startDate": "14 Nov, 2024",
+      "endDate": "14 Dec, 2024",
+      "budget": 5250,
+      "status": "Not Started"
+    },
+    {
+      "id": "785",
+      "projectName": "Python upgrade",
+      "clint": "Affort Solutions",
+      "startDate": "13 Nov, 2024",
+      "endDate": "13 Dec, 2024",
+      "budget": 1452,
+      "status": "Completed"
+    },
+    {
+      "id": "213",
+      "projectName": "Project monitoring",
+      "clint": "Shawn Kennedy",
+      "startDate": "12 Nov, 2024",
+      "endDate": "12 Dec, 2024",
+      "budget": 2357,
+      "status": "pending"
+    },
+    {
+      "id": "852",
+      "projectName": "Project alpho",
+      "clint": "Addax Ltd",
+      "startDate": "11 Nov, 2024",
+      "endDate": "11 Dec, 2024",
+      "budget": 9841,
+      "status": "In Progress"
+    },
+    {
+      "id": "147",
+      "projectName": "Multi-purpose landing",
+      "clint": "Profun Solutions",
+      "startDate": "10 Nov, 2024",
+      "endDate": "10 Dec, 2024",
+      "budget": 7854,
+      "status": "pending"
+    },
+    {
+      "id": "321",
+      "projectName": "Services & startup agency",
+      "clint": "Futo Agency",
+      "startDate": "9 Nov, 2024",
+      "endDate": "9 Dec, 2024",
+      "budget": 3114,
+      "status": "Not Started"
+    },
+    {
+      "id": "456",
+      "projectName": "NFT marketplace",
+      "clint": "",
+      "startDate": "8 Nov, 2024",
+      "endDate": "8 Dec, 2024",
+      "budget": 7531,
+      "status": "pending"
+    },
+    {
+      "id": "987",
+      "projectName": "Money transfer",
+      "clint": "Alina Smith",
+      "startDate": "7 Nov, 2024",
+      "endDate": "7 Dec, 2024",
+      "budget": 9510,
+      "status": "Completed"
+    },
+    {
+      "id": "753",
+      "projectName": "Project launchpad",
+      "clint": "Mave Metaverse",
+      "startDate": "6 Nov, 2024",
+      "endDate": "6 Dec, 2024",
+      "budget": 3045,
+      "status": "Not Started"
+    }
+  ],
+  "projects-analysis": {
+    "data": [
+      [
+        45,
+        55,
+        55,
+        52,
+        60,
+        58,
+        62
+      ],
+      [
+        75,
+        85,
+        100,
+        95,
+        90,
+        105,
+        87
+      ],
+      [
+        30,
+        40,
+        35,
+        25,
+        42,
+        45,
+        50
+      ]
+    ],
+    "label": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat",
+      "Sun"
+    ]
+  },
+  "projects-progress": {
+    "data": [
+      60,
+      30,
+      10
+    ],
+    "label": [
+      "In Progress",
+      "Not Started",
+      "Completed"
+    ]
+  },
+  "members-team": [
+    {
+      "id": "15456",
+      "name": "mark stjohn",
+      "subtitle": "Product Manager",
+      "hours": 140,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user6.jpg"
+    },
+    {
+      "id": "65347",
+      "name": "joan stanley",
+      "subtitle": "Web Designer",
+      "hours": 130,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user7.jpg"
+    },
+    {
+      "id": "42345",
+      "name": "jacob bell",
+      "subtitle": "UI/UX Designer",
+      "hours": 100,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user8.jpg"
+    },
+    {
+      "id": "98764",
+      "name": "donald bryan",
+      "subtitle": "Lead Developer",
+      "hours": 95,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user9.jpg"
+    },
+    {
+      "id": "75456",
+      "name": "kristina blomquist",
+      "subtitle": "Angular Developer",
+      "hours": 110,
+      "img": "https://angular.hibootstrap.com/daxa/images/users/user10.jpg"
+    }
+  ],
+  "transactions": [
+    {
+      "icon": [
+        "settings_backup_restore",
+        "#0f79f3",
+        "#dbeafd"
+      ],
+      "by": "Refund Bill payment",
+      "date": "15 Nov 2024 - 8:20am",
+      "price": 995,
+      "isIncrease": true,
+      "id": "079e"
+    },
+    {
+      "icon": [
+        "account_balance",
+        "#e74c3c",
+        "#fce4e2"
+      ],
+      "by": "Bank Transfer",
+      "date": "14 Nov 2024 - 7:20am",
+      "price": 1550,
+      "isIncrease": false,
+      "id": "3bac"
+    },
+    {
+      "icon": [
+        "credit_card",
+        "#796df6",
+        "#ebe9fe"
+      ],
+      "by": "Master Card",
+      "date": "13 Nov 2024 - 12:20am",
+      "price": 995,
+      "isIncrease": true,
+      "id": "f8ab"
+    },
+    {
+      "icon": [
+        "account_balance_wallet",
+        "#44cae3",
+        "#daf7fb"
+      ],
+      "by": "Wallet",
+      "date": "12 Nov 2024 - 9:20am",
+      "price": 995,
+      "isIncrease": true,
+      "id": "432e"
+    },
+    {
+      "icon": [
+        "attach_money",
+        "#ffc480",
+        "#fff4e8"
+      ],
+      "by": "Cash Withdrawal",
+      "date": "11 Nov 2024 - 5:13am",
+      "price": 995,
+      "isIncrease": false,
+      "id": "e352"
+    },
+    {
+      "icon": [
+        "payments",
+        "#2ecc71",
+        "#e0f8ea"
+      ],
+      "by": "Payment",
+      "date": "10 Nov 2024 - 8:20am",
+      "price": 657,
+      "isIncrease": false,
+      "id": "e8a7"
+    }
+  ],
+  "transactions-history":[
+    {
+      "id": "#ARP-1217",
+      "status": "successful",
+      "amount": 6855,
+      "rewards": 12,
+      "date": "2024-01-14"
+    },
+    {
+      "id": "#ABC-1231",
+      "status": "successful",
+      "amount": 258,
+      "rewards": 9,
+      "date": "2024-01-13"
+    },
+    {
+      "id": "#VGS-4123",
+      "status": "pending",
+      "amount": 3890,
+      "rewards": 11,
+      "date": "2024-01-12"
+    },
+    {
+      "id": "#FES-4212",
+      "status": "rejected",
+      "amount": 2500,
+      "rewards": 23,
+      "date": "2024-01-11"
+    },
+    {
+      "id": "#FDA-1234",
+      "status": "successful",
+      "amount": 8200,
+      "rewards": 10,
+      "date": "2024-01-10"
+    },
+    {
+      "id": "#DSE-5421",
+      "status": "rejected",
+      "amount": 640,
+      "rewards": 3,
+      "date": "2024-01-09"
+    },
+    {
+      "id": "#GTR-3123",
+      "status": "pending",
+      "amount": 9100,
+      "rewards": 43,
+      "date": "2024-01-08"
+    },
+    {
+      "id": "#AWS-1264",
+      "status": "successful",
+      "amount": 7300,
+      "rewards": 42,
+      "date": "2024-01-07"
+    },
+    {
+      "id": "#DXA-1963",
+      "status": "successful",
+      "amount": 6600,
+      "rewards": 11,
+      "date": "2024-01-06"
+    },
+    {
+      "id": "#FFSA-3451",
+      "status": "pending",
+      "amount": 2800,
+      "rewards": 14,
+      "date": "2024-01-05"
+    },
+    {
+      "id": "#DXA-1963",
+      "status": "successful",
+      "amount": 6600,
+      "rewards": 11,
+      "date": "2024-01-06"
+    },
+    {
+      "id": "#AWS-1264",
+      "status": "successful",
+      "amount": 7300,
+      "rewards": 42,
+      "date": "2024-01-07"
+    },
+    {
+      "id": "#GTR-3123",
+      "status": "pending",
+      "amount": 9100,
+      "rewards": 43,
+      "date": "2024-01-08"
+    },
+    {
+      "id": "#DSE-5421",
+      "status": "rejected",
+      "amount": 640,
+      "rewards": 3,
+      "date": "2024-01-09"
+    },
+    {
+      "id": "#FDA-1234",
+      "status": "successful",
+      "amount": 8200,
+      "rewards": 10,
+      "date": "2024-01-10"
+    },
+    {
+      "id": "#FES-4212",
+      "status": "rejected",
+      "amount": 2500,
+      "rewards": 23,
+      "date": "2024-01-11"
+    },
+    {
+      "id": "#VGS-4123",
+      "status": "pending",
+      "amount": 3890,
+      "rewards": 11,
+      "date": "2024-01-12"
+    },
+    {
+      "id": "#ABC-1231",
+      "status": "successful",
+      "amount": 258,
+      "rewards": 9,
+      "date": "2024-01-13"
+    },
+    {
+      "id": "#ARP-1217",
+      "status": "successful",
+      "amount": 6855,
+      "rewards": 12,
+      "date": "2024-01-14"
+    }
+  ],
+  "review":[
+    {
+      "id": "134",
+      "productName": "Hand Watch",
+      "productImg": "https://angular.hibootstrap.com/daxa/images/products/product6.png",
+      "customerName": "Marcia Baker",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user15.jpg",
+      "customerReview": "Auctor in nam malesuada auctor ultrices proin condimentum leo cras. Ultrices a quam massa tincidunt dictum luctus cursus.",
+      "rate": 5,
+      "time": "2024-11-10",
+      "status": "Approved"
+    },
+    {
+      "id": "312",
+      "productName": "Gaming Laptop",
+      "productImg": "https://angular.hibootstrap.com/daxa/images/products/product3.png",
+      "customerName": "Carolyn Barnes",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user7.jpg",
+      "customerReview": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+      "rate": 4.5,
+      "time": "2024-11-11",
+      "status": "Pending"
+    },
+    {
+      "id": "532",
+      "productName": "Sports Shoes",
+      "productImg": "https://angular.hibootstrap.com/daxa/images/products/product8.png",
+      "customerName": "Donna Miller",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user12.jpg",
+      "customerReview": "When an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "rate": 4,
+      "time": "2024-11-12",
+      "status": "Approved"
+    },
+    {
+      "id": "142",
+      "productName": "Woman Handbag",
+      "productImg": "https://angular.hibootstrap.com/daxa/images/products/product9.png",
+      "customerName": "Barbara Cross",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user5.jpg",
+      "customerReview": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+      "rate": 3.5,
+      "time": "2024-11-13",
+      "status": "Rejected"
+    },
+    {
+      "id": "564",
+      "productName": "Luxury Rendering",
+      "productImg": "https://angular.hibootstrap.com/daxa/images/products/product10.png",
+      "customerName": "Rebecca Block",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user16.jpg",
+      "customerReview": "Ultrices a quam massa tincidunt dictum luctus cursus.",
+      "rate": 3,
+      "time": "2024-11-14",
+      "status": "Pending"
+    },
+    {
+      "id": "175",
+      "productName": "Wireless Headphone",
+      "productImg": "https://angular.hibootstrap.com/daxa/images/products/product5.png",
+      "customerName": "Ramiro McCarty",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user9.jpg",
+      "customerReview": "Auctor in nam malesuada auctor ultrices proin condimentum leo cras. Ultrices a quam massa tincidunt dictum luctus cursus.",
+      "rate": 5,
+      "time": "2024-11-15",
+      "status": "Approved"
+    },
+    {
+      "id": "122",
+      "productName": "Futuristic Bracelet",
+      "productImg": "https://angular.hibootstrap.com/daxa/images/products/product11.png",
+      "customerName": "Robert Fairweather",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user1.jpg",
+      "customerReview": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+      "rate": 4.5,
+      "time": "2024-11-16",
+      "status": "Approved"
+    },
+    {
+      "id": "875",
+      "productName": "Mobile Device",
+      "productImg": "https://angular.hibootstrap.com/daxa/images/products/product12.png",
+      "customerName": "Marcelino Haddock",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user6.jpg",
+      "customerReview": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "rate": 5,
+      "time": "2024-11-17",
+      "status": "Rejected"
+    },
+    {
+      "id": "412",
+      "productName": "Triblend T-shirt",
+      "productImg": "https://angular.hibootstrap.com/daxa/images/products/product13.png",
+      "customerName": "Thomas Wilson",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user13.jpg",
+      "customerReview": "Ultrices a quam massa tincidunt dictum luctus cursus.",
+      "rate": 5,
+      "time": "2024-11-18",
+      "status": "Approved"
+    },
+    {
+      "id": "897",
+      "productName": "Camera Lens",
+      "productImg": "https://angular.hibootstrap.com/daxa/images/products/product14.png",
+      "customerName": "Nathaniel Hulsey",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user14.jpg",
+      "customerReview": "Auctor in nam malesuada auctor ultrices proin condimentum leo cras.",
+      "rate": 4.0,
+      "time": "2024-11-19",
+      "status": "Pending"
+    }
+  ],
+  "refund": [
+    {
+      "id": "#ARP-1217",
+      "customerName": "Marcia Baker",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user15.jpg",
+      "numOrdersReturned": 2,
+      "numOrdersRetfunded": 1,
+      "numOrdersReplaced": 0,
+      "totalRefunded": 42,
+      "totalReplaced": 50,
+      "time": "Nov 11, 2024"
+    },
+    {
+      "id": "#ARP-1364",
+      "customerName": "Carolyn Barnes",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user7.jpg",
+      "numOrdersReturned": 1,
+      "numOrdersRetfunded": 1,
+      "numOrdersReplaced": 0,
+      "totalRefunded": 32,
+      "totalReplaced": 54,
+      "time": "Nov 12, 2024"
+    },
+    {
+      "id": "#ARP-2951",
+      "customerName": "Donna Miller",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user12.jpg",
+      "numOrdersReturned": 2,
+      "numOrdersRetfunded": 7,
+      "numOrdersReplaced": 4,
+      "totalRefunded": 53,
+      "totalReplaced": 67,
+      "time": "Nov 13, 2024"
+    },
+    {
+      "id": "#ARP-7342",
+      "customerName": "Barbara Cross",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user5.jpg",
+      "numOrdersReturned": 3,
+      "numOrdersRetfunded": 1,
+      "numOrdersReplaced": 2,
+      "totalRefunded": 42,
+      "totalReplaced": 56,
+      "time": "Nov 14, 2024"
+    },
+    {
+      "id": "#ARP-4619",
+      "customerName": "Rebecca Block",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user16.jpg",
+      "numOrdersReturned": 5,
+      "numOrdersRetfunded": 2,
+      "numOrdersReplaced": 7,
+      "totalRefunded": 24,
+      "totalReplaced": 45,
+      "time": "Nov 15, 2024"
+    },
+    {
+      "id": "#ARP-7346",
+      "customerName": "Ramiro McCarty",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user9.jpg",
+      "numOrdersReturned": 5,
+      "numOrdersRetfunded": 6,
+      "numOrdersReplaced": 2,
+      "totalRefunded": 53,
+      "totalReplaced": 56,
+      "time": "Nov 16, 2024"
+    },
+    {
+      "id": "#ARP-7612",
+      "customerName": "Robert Fairweather",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user1.jpg",
+      "numOrdersReturned": 2,
+      "numOrdersRetfunded": 6,
+      "numOrdersReplaced": 1,
+      "totalRefunded": 52,
+      "totalReplaced": 67,
+      "time": "Nov 17, 2024"
+    },
+    {
+      "id": "#ARP-1217",
+      "customerName": "Marcia Baker",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user15.jpg",
+      "numOrdersReturned": 6,
+      "numOrdersRetfunded": 5,
+      "numOrdersReplaced": 4,
+      "totalRefunded": 42,
+      "totalReplaced": 46,
+      "time": "Nov 18, 2024"
+    },
+    {
+      "id": "#ARP-7642",
+      "customerName": "Marcelino Haddock",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user6.jpg",
+      "numOrdersReturned": 7,
+      "numOrdersRetfunded": 2,
+      "numOrdersReplaced": 5,
+      "totalRefunded": 44,
+      "totalReplaced": 68,
+      "time": "Nov 19, 2024"
+    },
+    {
+      "id": "#ARP-4652",
+      "customerName": "Thomas Wilson",
+      "customerImg": "https://angular.hibootstrap.com/daxa/images/users/user13.jpg",
+      "numOrdersReturned": 5,
+      "numOrdersRetfunded": 1,
+      "numOrdersReplaced": 6,
+      "totalRefunded": 99,
+      "totalReplaced": 742,
+      "time": "Nov 20, 2024"
+    }
+  ]
+
+
+}

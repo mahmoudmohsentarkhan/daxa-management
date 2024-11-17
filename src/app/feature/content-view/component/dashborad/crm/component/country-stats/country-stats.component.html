@@ -1,0 +1,34 @@
+<section styleSection>
+
+  <title-section title="country stats">
+    <menu-list #altContent />
+  </title-section>
+
+  <div class="map">
+    <img src="https://angular.hibootstrap.com/daxa/images/locations-map.png" alt="map">
+  </div>
+
+  <table>
+    <tr>
+      <th>country</th>
+      <th>user</th>
+      <th>bounce rate</th>
+    </tr>
+    @for (el of elementsLeads; track $index) {
+    <tr>
+      <td>
+        <div class="type d-flex align-items-center">
+          <img [src]="el.flag" [alt]="el.country" width="25" height="25" class="me-2">
+          <span class="type">{{el.country}}</span>
+        </div>
+      </td>
+      <td>
+        {{el.users | number: '1.0'}}
+      </td>
+      <td>
+        {{ratio(el.users) | percent: '1.1-2'}}
+      </td>
+    </tr>
+  }
+  </table>
+</section>

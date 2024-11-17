@@ -1,0 +1,148 @@
+<section styleSection>
+  <form class="row" [formGroup]="fmSeller">
+      <title-section title="Create Seller"/>
+      <div class="col-12 col-md-6">
+        <label> Seller Name </label>
+        <mat-form-field>
+          <mat-label>enter Seller Name</mat-label>
+          <input
+            matInput
+            formControlName="name"
+          />
+        </mat-form-field>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label> Store Name</label>
+        <mat-form-field>
+          <mat-label>Enter Store Name</mat-label>
+          <input
+            matInput
+            formControlName="storeName"
+          />
+        </mat-form-field>
+      </div>
+
+
+      <div class="col-12 col-md-6">
+        <label> Phone Number</label>
+        <mat-form-field>
+          <mat-label>Enter Phone Number</mat-label>
+          <input
+            matInput
+            formControlName="phone"
+          />
+        </mat-form-field>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label>email addresss</label>
+        <mat-form-field>
+          <mat-label>Enter email address</mat-label>
+          <input
+            matInput
+            formControlName="email"
+          />
+        </mat-form-field>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label> Date of Birth </label>
+        <mat-form-field>
+          <mat-label>Enter Date of Birth</mat-label>
+          <input
+            matInput
+            [matDatepicker]="birth"
+            formControlName="birth"
+            [min]="minDate"
+            [max]="maxDate"
+          />
+          <mat-datepicker-toggle
+            matIconSuffix
+            [for]="birth"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #birth></mat-datepicker>
+        </mat-form-field>
+      </div>
+
+
+      <div class="col-12 col-md-6">
+        <label> city  </label>
+        <mat-form-field>
+          <mat-label>select city</mat-label>
+          <mat-select formControlName="city">
+            @for (city of cities; track $index) {
+            <mat-option [value]="city">{{ city }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label> country  </label>
+        <mat-form-field>
+          <mat-label>select country</mat-label>
+          <mat-select formControlName="country">
+            @for (country of countries; track $index) {
+            <mat-option [value]="country">{{ country }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+
+
+      <div class="col-12 col-md-6">
+        <label>ZIP / Postcode</label>
+        <mat-form-field>
+          <mat-label>Enter ZIP / Postcode</mat-label>
+          <input
+            matInput
+            formControlName="postcode"
+          />
+        </mat-form-field>
+      </div>
+
+
+      <div class="col-12">
+        <label>Wallet Balance</label>
+        <mat-form-field>
+          <mat-label>Enter Wallet Balance</mat-label>
+          <input
+            matInput
+            formControlName="walletBalance"
+          />
+        </mat-form-field>
+      </div>
+
+      <div class="col-12">
+        <label> Description (optional) </label>
+        <mat-form-field>
+          <mat-label>Write your description here....</mat-label>
+          <textarea
+            matInput
+            rows="6"
+            placeholder="Type here..."
+            formControlName="description"
+          ></textarea>
+        </mat-form-field>
+      </div>
+  </form>
+  <div class="action row g-2">
+    <div class="col-12 col-md-3">
+      <button
+        mat-flat-button
+        matRipple
+        class="add"
+        (click)="isEdit() ? update() : create()"
+      >
+        {{ isEdit() ? "update" : "create product" }}
+      </button>
+    </div>
+    <div class="col-12 col-md-2">
+      <button mat-flat-button matRipple class="cancel" (click)="cancel()">
+        cancel
+      </button>
+    </div>
+  </div>
+</section>

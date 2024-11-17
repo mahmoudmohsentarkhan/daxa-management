@@ -1,0 +1,51 @@
+section
+{
+  .title{
+    font-weight: 600;
+    letter-spacing: 1.1;
+    text-transform: capitalize;
+  }
+  .part{
+    margin-block-end: 10px;
+  }
+  ul{
+    li{
+      text-transform: capitalize;
+      mat-checkbox{
+        border-radius: 100%;
+      }
+    }
+  }
+  .price mat-slider {
+    width: 100% !important;
+    .mdc-slider__track{
+      background-color: red !important;
+    }
+  }
+}
+
+@mixin mdc-checkbox($bgcolor) {
+  .#{$bgcolor} {
+    .mdc-checkbox__background,
+    .mdc-checkbox:hover .mdc-checkbox__background {
+      background-color: $bgcolor !important;
+      border-color: $bgcolor !important;
+    }
+  }
+}
+    $colors : black,cadetblue,brown,aquamarine,darkblue,darkgreen,cornsilk,chocolate,darkgray,red,;
+
+::ng-deep{
+  .colors {
+    @each $color in $colors {
+      @include mdc-checkbox($color);
+    }
+  }
+  .price mat-slider {
+    .mdc-slider__track{
+      background-color: #9999998a!important;
+    }
+  }
+}
+
+

@@ -1,0 +1,23 @@
+<section class="row g-4">
+
+    @for (item of [].constructor(4); track $index) {
+      <div class="col-12 col-s-6 col-xl-4 col-xxl-3">
+        <div class="row g-4">
+          <div class="col-12">
+            <div styleSection class="status">
+              <title-section
+                title="To Do (04)"
+                subtitle="This month add 04 new projects">
+                <mat-icon  #altContent fontIcon="more_horiz"/>
+              </title-section>
+            </div>
+          </div>
+          <kanban-board-task class="col-12"/>
+          <kanban-board-task class="col-12"/>
+          <kanban-board-task class="col-12"/>
+          <kanban-board-task class="col-12"/>
+        </div>
+      </div>
+    }
+
+</section>

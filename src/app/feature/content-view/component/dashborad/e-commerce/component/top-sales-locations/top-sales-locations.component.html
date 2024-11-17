@@ -1,0 +1,16 @@
+<section styleSection>
+  <title-section title="top sales locations"/>
+  <div>
+    <div class="map" >
+      <img src="https://angular.hibootstrap.com/daxa/images/locations-map.png" >
+    </div>
+    <ul class="countries">
+      @for (countrie of countries; track $index) {
+        <li class="d-flex align-items-center">
+          <img [src]="countrie.img" class="me-1" width="20" height="20">
+          {{countrie.name}} <span class="ms-1">{{countrie.percentage}}%</span>
+        </li>
+      }
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+
+.quantity-counter{
+  font-size: 20px;
+margin-block: 20px;
+  margin-right: 25px;
+  button{
+    color: var(--bodyColor);
+    &:hover{
+      color: var(--daxaColor);
+    }
+  }
+  span{
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    cursor: default;
+  }
+}

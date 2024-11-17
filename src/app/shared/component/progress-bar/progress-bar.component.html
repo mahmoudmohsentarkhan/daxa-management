@@ -1,0 +1,9 @@
+
+<div class="my-progress d-flex align-items-center " [ngClass]="isColumns()?'flex-column':'flex-row-reverse'">
+  @if (!hideLabel()) {
+    <div class="percentage">{{percentage() | number:'1.0-1'}}%</div>
+  }
+  <div class="progress-bar">
+    <span class="rate-bar" [ngStyle]="{'backgroundColor':colors[indexColor() % colors.length],'width':percentage()+'%'}"></span>
+  </div>
+ </div>

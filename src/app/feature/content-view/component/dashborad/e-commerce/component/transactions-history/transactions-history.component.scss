@@ -1,0 +1,24 @@
+table{
+  tr{
+    td{
+      font-weight: 400;
+      .icon{
+        height: 45px;
+        width: 45px;
+        border-radius: 100%;
+      }
+      .info{
+        h6{
+          font-size: 18px;
+          text-align: start;
+          color: #555;
+        }
+        span{
+          font-size: 14px;
+          margin-top: -2px;
+          display: block;
+        }
+      }
+    }
+  }
+}

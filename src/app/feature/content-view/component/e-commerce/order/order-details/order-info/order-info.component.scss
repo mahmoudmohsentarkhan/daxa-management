@@ -1,0 +1,11 @@
+section{
+  ul{
+    li {
+      line-height: 2;
+      text-transform: capitalize;
+      span{
+        color: var(--bodyColor);
+      }
+    }
+  }
+}

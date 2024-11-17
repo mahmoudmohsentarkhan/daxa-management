@@ -1,0 +1,24 @@
+section{
+  ul{
+    li{
+      text-transform: capitalize;
+      .icon{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: #f4f6fc;
+      }
+      span{
+        &.type{font-weight: 500};
+        &:not(.type){color: #919aa3}
+      }
+      &:not(:last-child){
+        padding-block: 15px;
+        border-block-end: 1px dashed #e0e0e0;
+      }
+      &:not(:first-child){
+        padding-top: 15px;
+      }
+    }
+  }
+}

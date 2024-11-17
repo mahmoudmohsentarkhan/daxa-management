@@ -1,0 +1,54 @@
+<section>
+<div class="wrapper-section">
+  <div class="logo">
+    <div class="img d-flex align-items-center">
+      <img src="https://angular.hibootstrap.com/daxa/images/logo-icon.svg" alt="logo">
+      <b>daxa</b>
+    </div>
+    <mat-icon  (click)="toggleAside()" [ngClass]="{'d-none': !isShowAside}">close</mat-icon>
+    <button class="fixed d-flex align-items-center justify-content-center" (click)="toggleAside()" [ngClass]="{'hide': isShowAside}">
+      <fa-icon [icon]="faArrowRight"/>
+    </button>
+  </div>
+  <div class="navs">
+    @for (section of sections; track $index) {
+      <ul class="section">
+        <li class="title">- {{section.nameSection| uppercase}}  </li>
+        @for (branch of section.branch; track $index) {
+          <li class="branch" (click)="togleOpenList(branch.name)" >
+            <div class="title-branch" [ngClass]="{'active': (openLinks==branch.name) }">
+
+              <a class="left" [routerLink]="[ branch.navigateTo ]" routerLinkActive="active">
+                <span class="icon-branch"><fa-icon [icon]="branch.icon" /></span>
+                <span class="name-branch">{{branch.name| titlecase}}</span>
+              </a>
+              @if (branch.child) {
+                <span class="arrow-right">
+                  <fa-icon [icon]="(openLinks==branch.name)?faAngleDown:faAngleRight" />
+                </span>
+              }
+            </div>
+            @if (branch.child) {
+              <ul class="child" [ngClass]="{'active': (openLinks==branch.name) }">
+
+                @for (child of branch.child; track $index) {
+                  <a [routerLink]="[ child.navigateTo ]" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="stopPropagation($event)">
+                  <li >
+                    {{child.name}}
+
+                  </li>
+                </a>
+                }
+
+              </ul>
+            }
+
+          </li>
+        }
+
+      </ul>
+    }
+  </div>
+</div>
+</section>
+

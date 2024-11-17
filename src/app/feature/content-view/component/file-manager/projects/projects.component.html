@@ -1,0 +1,5 @@
+<section class="row g-4">
+  @for (item of data; track $index) {
+    <file-card class="col-4" [data]="item"/>
+  }
+</section>

@@ -1,0 +1,20 @@
+<section styleSection>
+  <title-section title="time spending's" />
+  @if (
+    chartOptions &&
+    chartOptions.series && chartOptions.chart && chartOptions.colors &&
+    chartOptions.tooltip && chartOptions.dataLabels && chartOptions.legend &&
+   chartOptions.responsive) {
+  <apx-chart
+    [series]="chartOptions.series"
+    [chart]="chartOptions.chart"
+    [responsive]="chartOptions.responsive"
+    [tooltip]="chartOptions.tooltip"
+    [dataLabels]="chartOptions.dataLabels"
+    [legend]="chartOptions.legend"
+    [colors]="chartOptions.colors"
+  />
+  }
+
+  <stock-arrow [rate]="1" label="weekly report"/>
+</section>

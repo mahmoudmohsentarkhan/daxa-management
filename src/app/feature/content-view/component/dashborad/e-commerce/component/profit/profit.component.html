@@ -1,0 +1,23 @@
+<section class="profit" styleSection>
+  <title-section title="profit" statistics="$359K" >
+    <menu-list #altContent></menu-list>
+  </title-section>
+  @if(
+      chartOptions &&
+      chartOptions.series && chartOptions.chart && chartOptions.yaxis &&
+      chartOptions.grid && chartOptions.tooltip && chartOptions.dataLabels &&
+      chartOptions.xaxis && chartOptions.stroke
+      ){
+        <apx-chart
+          [series]="chartOptions.series"
+          [chart]="chartOptions.chart"
+          [dataLabels]="chartOptions.dataLabels"
+          [grid]="chartOptions.grid"
+          [stroke]="chartOptions.stroke"
+          [tooltip]="chartOptions.tooltip"
+          [xaxis]="chartOptions.xaxis"
+          [yaxis]="chartOptions.yaxis"
+        />
+    }
+
+</section>

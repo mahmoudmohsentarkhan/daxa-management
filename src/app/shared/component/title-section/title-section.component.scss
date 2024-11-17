@@ -1,0 +1,19 @@
+section{
+  text-transform: capitalize;
+  .title{
+    font-weight: 500;
+    text-transform: capitalize;
+    h6{
+      font-size: 18px;
+      font-weight: inherit;
+      margin-bottom: 0;
+    }
+  }
+  .statistics{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  span.subtitle{
+    font-size: 14px;
+  }
+}

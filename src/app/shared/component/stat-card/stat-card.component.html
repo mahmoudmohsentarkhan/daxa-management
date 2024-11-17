@@ -1,0 +1,38 @@
+<section
+  [style.--background-color]="color() || '#fff'"
+  [ngClass]="{ 'd-flex p-0': !info()?.subtitle }"
+  styleSection
+>
+  <div
+    class="total"
+    [ngClass]="{
+      'd-flex justify-content-between': !isColumns(),
+      'custome-title me-4': !info()?.subtitle
+    }"
+  >
+    <title-section [title]="title()" [statistics]="number()" />
+    @if(matIcon() || imgIcon()){
+    <div
+      class="icon d-flex justify-content-center align-items-center"
+      #altContent
+      [ngClass]="{ 'my-4 mx-auto': isColumns() }"
+      [style.background-color]="iconBackColor()"
+    >
+      @if(matIcon()){
+      <mat-icon [fontIcon]="matIcon()" />
+      } @if (imgIcon()) {
+      <img [src]="imgIcon()" [width]="size()" [height]="size()" />
+      }
+    </div>
+    }
+  </div>
+  <div class="rate">
+    {{ info()?.subtitle }}
+    @if(info()?.rate){
+    <stock-arrow
+      [rate]="info()?.rate || 0"
+      [isDecrease]="info()?.isDecrease || false"
+    ></stock-arrow>
+    }
+  </div>
+</section>

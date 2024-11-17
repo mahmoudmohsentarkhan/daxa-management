@@ -1,0 +1,34 @@
+section{
+  button{
+    text-transform: capitalize;
+    &.compose-email{
+      border-radius: 5px;
+      width: 100%;
+      margin-block: 15px;
+      background-color: var(--daxaColor);
+    }
+    &:not(.compose-email){
+      color: var(--daxaColor);
+      margin-top: 15px;
+      font-weight: 500;
+    }
+  }
+  ul.lists{
+    color: var(--blackColor);
+
+    li{
+      text-transform: capitalize;
+      gap: 5px;
+      padding-block: 10px;
+      cursor: pointer;
+      mat-icon{
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+      }
+      &:hover{
+        color: var(--daxaColor);
+      }
+    }
+  }
+}

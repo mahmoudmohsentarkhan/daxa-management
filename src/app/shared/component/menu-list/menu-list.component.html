@@ -1,0 +1,9 @@
+<button mat-button [matMenuTriggerFor]="menu" class="custom-button d-flex w-100">
+  <span>{{filterYear() | titlecase}}</span>
+  <mat-icon matSuffix>keyboard_arrow_down</mat-icon>
+</button>
+<mat-menu #menu="matMenu" xPosition="before" >
+  <button mat-menu-item (click)="toggleFilterYear('year 2022')">{{'year 2022' | titlecase}}</button>
+  <button mat-menu-item (click)="toggleFilterYear('year 2023')">{{'year 2023' | titlecase}}</button>
+  <button mat-menu-item (click)="toggleFilterYear('year 2024')">{{'year 2024' | titlecase}}</button>
+</mat-menu>

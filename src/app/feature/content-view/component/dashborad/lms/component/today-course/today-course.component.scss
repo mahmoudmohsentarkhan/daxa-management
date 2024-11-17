@@ -1,0 +1,40 @@
+section{
+  background-color: #d2d2e4 !important  ;
+  .course-cards{
+    height: 200px;
+    position: relative;
+    course-card{
+
+      width: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      opacity: 0;
+      background-color: #d2d2e4 !important  ;
+      &.active{
+        opacity: 1;
+      }
+    }
+  }
+.view-details{
+  .dots{
+    gap: 5px;
+    span{
+      width: 5px;
+      height: 5px;
+      border-radius: 100%;
+      background-color: #fff;
+      transition: all 0.3s linear;
+      cursor: pointer;
+      &.active{
+        background-color: var(--daxaColor);
+      }
+    }
+  }
+  a{
+    color: var(--daxaColor);
+    text-transform: capitalize;
+  }
+}
+
+}

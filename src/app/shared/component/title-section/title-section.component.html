@@ -1,0 +1,25 @@
+<section>
+  <div class="title d-flex align-items-center justify-content-between" [ngStyle]="{'margin-bottom': statistics() ? '10px' : '0px'}">
+    <div class="header">
+      <h6>{{title()}}</h6>
+      @if(subtitle()){
+        <span class="subtitle">
+          {{subtitle()}}
+        </span>
+      }
+    </div>
+    @if(hasContent()){
+      <div>
+        <ng-content></ng-content>
+      </div>
+    } @else if(!hasContent() && content()) {
+      <div>
+        {{content()}}
+      </div>
+    }
+  </div>
+  @if(statistics()){
+    <div class="statistics">{{statistics()}}</div>
+  }
+
+</section>

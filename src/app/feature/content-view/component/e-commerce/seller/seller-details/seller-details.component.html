@@ -1,0 +1,24 @@
+<section class="row g-4">
+
+  <div styleSection>
+    <div class="row">
+      <title-section title="Seller Overview" class="mb-2"/>
+      @for (card of cards; track $index) {
+        <stat-card
+        class="col-12 col-sm-6 col-xl-3"
+        [title]="card.title"
+        [number]="card.number"
+        [info]="card.info"
+        [imgIcon]="card.imgIcon"
+        [iconBackColor]="card.bgColor"/>
+      }
+    </div>
+  </div>
+
+  <div>
+    <div class="row">
+      <seller-card class="col-12 col-lg-5 col-xxl-3" [seller]="seller"/>
+      <seller-revenue class="col-12 col-lg-7 col-xxl-9"/>
+    </div>
+  </div>
+</section>

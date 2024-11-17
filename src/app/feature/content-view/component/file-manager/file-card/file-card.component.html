@@ -1,0 +1,24 @@
+<section styleSection>
+  <div class="header d-flex justify-content-between">
+    <div class="icon d-flex align-items-center">
+      @if(data()?.imgIcon){
+        <img [src]="data()?.imgIcon" width="56" height="56" class="me-2">
+      }@else {
+        <mat-icon fontIcon="folder" class="me-2" />
+      }
+      <span>Project</span>
+    </div>
+    <mat-icon fontIcon="more_horiz" />
+  </div>
+  @if(data()?.fileItems || data()?.fileSize){
+    <div class="footer mt-4 d-flex justify-content-between">
+      @if(data()?.fileItems){
+        <span>{{data()?.fileItems}}</span>
+        Files
+      }
+      @if(data()?.fileSize){
+        <span>{{data()?.fileSize}}</span>
+      }
+    </div>
+  }
+</section>

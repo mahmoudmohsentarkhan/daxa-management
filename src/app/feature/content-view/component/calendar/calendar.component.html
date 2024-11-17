@@ -1,0 +1,14 @@
+<section class="row g-4">
+    <div class="full-calendar col-12 col-xxl-8" >
+      <full-calendar [options]="calendarOptions" styleSection>
+        <ng-template #eventContent let-arg>
+          <b>{{arg.timeText}}</b>
+          <i>{{arg.event.title}}</i>
+        </ng-template>
+      </full-calendar>
+    </div>
+    <div class="col-12 col-xxl-4" >
+      <working-schedule/>
+    </div>
+
+</section>

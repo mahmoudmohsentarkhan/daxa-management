@@ -1,0 +1,16 @@
+@use "../assets/scss/global.scss" as global;
+
+main{
+  display: flex;
+  overflow: hidden;
+
+  .content{
+    flex: 1;
+    padding: global.$mainPadding;
+    width: 100vw;
+    @media (max-width: 540px) {
+      padding-right: 0;
+      padding-top: 0;
+    }
+  }
+}

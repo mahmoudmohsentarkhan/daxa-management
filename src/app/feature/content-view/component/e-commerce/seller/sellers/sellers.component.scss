@@ -1,0 +1,11 @@
+section{
+  .head{
+    button{
+      text-transform: capitalize;
+      color: var(--daxaColor);
+      &:hover{
+        background-color: #ecf4fe;
+      }
+    }
+  }
+}

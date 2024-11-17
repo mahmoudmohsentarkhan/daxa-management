@@ -1,0 +1,23 @@
+table{
+  td{
+    .info{
+      font-weight: 500;
+      font-size: 16px;
+      mat-icon{
+        color: var(--warningColor);
+        font-size: 25px;
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .edit{
+      color: var(--bodyColor);
+    }
+    &:last-child{
+      text-align: end;
+    }
+  }
+  th:last-child{
+    text-align: end;
+  }
+}

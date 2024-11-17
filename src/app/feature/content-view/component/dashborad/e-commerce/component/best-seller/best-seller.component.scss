@@ -1,0 +1,24 @@
+section{
+  background-color: #ddddef !important;
+  background-image: url("https://angular.hibootstrap.com/daxa/images/man.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position:  calc(100% - 15px ) 100% ;
+  text-transform: capitalize;
+  h6.name-seller{
+    color: #796df6;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .sales{
+    margin-bottom: 30px;
+    b{
+      font-size: 25px;
+      font-weight: 500;
+    }
+  }
+  a{
+
+  }
+}

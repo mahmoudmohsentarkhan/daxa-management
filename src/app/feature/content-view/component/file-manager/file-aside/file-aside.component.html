@@ -1,0 +1,21 @@
+<aside styleSection>
+  <title-section title="my drive"/>
+  <div class="my-3">
+    <app-search/>
+  </div>
+  <ul class="sidebar-list">
+    @for (item of links; track $index) {
+      <li class="d-flex align-items-center">
+        <mat-icon [fontIcon]="item.icon" class="me-2" />
+        {{item.title}}
+      </li>
+    }
+  </ul>
+  <div class="storage-status mt-4">
+    <title-section title=" Storage Status"/>
+    <div class="progress-bar my-2">
+      <span [style]="{'width':'50%'}"></span>
+    </div>
+    <p>% 32 GB used of 128 GB</p>
+  </div>
+</aside>

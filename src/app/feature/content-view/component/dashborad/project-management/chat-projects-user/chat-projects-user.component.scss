@@ -1,0 +1,23 @@
+section{
+
+  mat-form-field{
+    height: 70px;
+    width: 100%;
+    mat-label{
+      font-size: 14px;
+      font-weight: 300;
+      color: #999
+    }
+  }
+  mat-icon{
+    color: var(--daxaColor) !important;
+
+  }
+}
+
+::ng-deep{
+  .mdc-text-field--filled:not(.mdc-text-field--disabled){
+    background-color: #f4f6fc !important;
+  }
+
+}

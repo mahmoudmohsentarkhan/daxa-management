@@ -1,0 +1,34 @@
+<section class="row g-4">
+  <app-welcome class="col-12 col-md-6"/>
+  @for (card of cards; track $index) {
+    <stat-card
+      class="col-4 col-md-2"
+      [title]="card.title"
+      [number]="card.number"
+      [isColumns]="card.isColumns"
+      [iconBackColor]="card.iconBackColor"
+      [info]="card.info"
+      [imgIcon]="card.imgIcon"
+      [size]="card.size"
+      />
+  }
+  <active-students class="col-12 col-sm-7"/>
+  <courses-categories class="col-12 col-sm-5" />
+
+  <top-instructors class="col-12 col-sm-6 col-xxl-4"/>
+  <div class="col-12 col-sm-6 col-xxl-4">
+    <div class="row g-4">
+      <total-courses-sales class="col-4 col-sm-12"/>
+      <stat-card class="col-4 col-sm-6" title="Video Courses" number="100+" [isColumns]="true" [info]="{subtitle:'This Month',rate:0.52}" imgIcon="https://angular.hibootstrap.com/daxa/images/icons/video-content.svg" iconBackColor="#00cae3"/>
+      <stat-card class="col-4 col-sm-6" title="Total Instructors" number="200K" [isColumns]="true" [info]="{subtitle:'last Month',rate:0.12}" imgIcon="https://angular.hibootstrap.com/daxa/images/icons/video-content.svg" iconBackColor="#796df6"/>
+    </div>
+  </div>
+  <student-progress class="col-12 col-xxl-4"/>
+
+  <courses class="col-12"/>
+
+  <time-spending class="col-12 col-md-4 col-xxl-3"/>
+  <average-enrollment-rate class="col-12 col-md-4 col-xxl-6" />
+  <today-course class="col-12 col-md-4 col-xxl-3" />
+
+</section>

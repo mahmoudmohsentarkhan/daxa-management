@@ -1,0 +1,72 @@
+section{
+  .messages{
+    padding-inline: 0 !important;
+    .header{
+      padding-inline: 15px;
+      app-search{
+        width: 100% !important;
+      }
+    }
+
+    mat-tab-group{
+      ul{
+        height: 500px;
+        overflow-y: auto;
+        li{
+          padding: 10px 15px ;
+          &:first-child, &:hover{
+            background-color: #f4f6fc;
+          }
+        }
+      }
+    }
+  }
+
+  .chat-room{
+    .chat-header{
+      border-block-end: 1px solid #eaecf2;
+      padding-inline: 15px;
+    }
+    .chat-message{
+      padding-inline: 15px;
+      height: 455px;
+      overflow-y: auto;
+    }
+    .chat-footer{
+      padding: 20px;
+      padding-bottom: 0;
+      margin-inline: 15px;
+      border-radius: 5px;
+      background-color: #f4f6fc;
+      gap: 10px;
+      .submit-message{
+        width: 100%;
+        mat-form-field{
+          width: 100%;
+          mat-icon{
+            cursor: pointer;
+            &:hover{
+              color: var(--daxaColor);
+            }
+          }
+        }
+      }
+
+    }
+    .icons{
+      color: var(--bodyColor);
+      gap: 10px;
+      white-space: nowrap;
+      mat-icon{
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+ ::ng-deep{
+  .mdc-text-field--filled:not(.mdc-text-field--disabled){
+    background-color: #fff !important;
+  }
+ }

@@ -1,0 +1,22 @@
+div{
+  button,input{
+    background-color: #f4f6fc;
+    padding: 12px;
+    border
+    &:is(button) {
+      cursor: pointer;
+      padding-inline: 12px;
+      fa-icon{
+        font-size: 12px;
+      }
+    }
+  }
+  input{
+    padding-inline-start: 0;
+    width: 100%;
+    &::placeholder{
+      font-weight: 300;
+    }
+  }
+
+}

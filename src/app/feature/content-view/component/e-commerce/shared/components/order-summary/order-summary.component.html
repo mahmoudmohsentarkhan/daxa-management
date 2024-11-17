@@ -1,0 +1,58 @@
+<section styleSection>
+  <div class="title">
+    <title-section title="Order Summary"/>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Grand Total :</td>
+        <td>{{totalPrice() | currency}}</td>
+      </tr>
+      <tr>
+        <td>Discount :</td>
+        <td>{{orderCharges().discount}}%</td>
+      </tr>
+      <tr>
+        <td>Tax :</td>
+        <td>{{orderCharges().tax | currency:'USD':'symbol':'1.0' }}</td>
+      </tr>
+      <tr class="total">
+        <td>Subtotal :</td>
+        <td>{{subTotal | currency}}</td>
+      </tr>
+      <tr>
+        <td>Shipping Charge :</td>
+        <td>{{orderCharges().shippingCharge | currency:'USD':'symbol':'1.0' }}</td>
+      </tr>
+      <tr>
+        <td>Coupon Charge :</td>
+        <td>{{ orderCharges().couponCharge| currency:'USD':'symbol':'1.0' }}</td>
+      </tr>
+      <tr class="total">
+        <td>Total :</td>
+        <td>{{total | currency}}</td>
+      </tr>
+    </tbody>
+  </table>
+  @if(!orderTracking()){
+    @if (!showPayment() || orderTracking()) {
+      <div class="note">
+        <p>Add A Note</p>
+        <mat-form-field>
+          <mat-label>Write here...</mat-label>
+          <textarea matInput rows="6" placeholder="E.g.It makes me feel..."></textarea>
+        </mat-form-field>
+        <button mat-flat-button>Proceed To Checkout</button>
+      </div>
+
+    }@else {
+      <cart-payment-method [totalPrice]="total"/>
+    }
+  }
+</section>

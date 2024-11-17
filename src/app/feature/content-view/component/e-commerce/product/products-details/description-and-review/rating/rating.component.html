@@ -1,0 +1,23 @@
+<section class="rating">
+  <title-section title="rating"/>
+  <div class="row g-2">
+    <div class="overall-rating col-12 col-lg-2 d-flex flex-column justify-content-center">
+      <b>4.9</b>
+      <p>Overall Rating</p>
+      <app-rate [rate]="5"/>
+    </div>
+    <ul class="col-12 col-lg-10">
+        @for (item of [50,20,15,10,5]; track $index) {
+          <li class="d-flex align-items-center">
+            <app-rate [rate]="5 - $index"/>
+            <app-progress-bar [percentage]="item"/>
+          </li>
+        }
+    </ul>
+
+    <div class="row g-2">
+      <e-commerce-review-item class="col-12 col-lg-6"/>
+      <e-commerce-review-item class="col-12 col-lg-6"/>
+    </div>
+  </div>
+</section>

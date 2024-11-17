@@ -1,0 +1,20 @@
+section{
+  button{
+    mat-icon{
+      padding: 5px;
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #e0e0e0;
+      &:hover{
+        background-color: #ecf4fe;
+      }
+    }
+  }
+}
+
+:ng-deep{
+  .mat-paginator .mat-mdc-paginator-container{
+    justify-content: space-between !important;
+  }
+}

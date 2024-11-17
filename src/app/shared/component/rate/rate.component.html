@@ -1,0 +1,9 @@
+<ul class="d-flex">
+  @for (item of [].constructor(rate()); track $index) {
+    <li><fa-icon [icon]="faStarS"/></li>
+  }
+  @for (item of [].constructor(5-rate()); track $index) {
+    <li><fa-icon [icon]="faStarR"/></li>
+  }
+  <li>({{rate()}})</li>
+</ul>

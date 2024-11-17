@@ -1,0 +1,43 @@
+<section class="row g-4">
+    <total-sales class="col-12 col-xxl-6"></total-sales>
+
+    <div class="total-stat col-12 col-xxl-6">
+      <div class="row g-4">
+        @for (card of cards; track $index) {
+        <stat-card
+          class="col-12 col-sm-6"
+          [title]="card.title"
+          [iconBackColor]="card.iconBackColor || '#0f79f3'"
+          [number]="card.number"
+          [matIcon]="card.matIcon"
+          [info]="card.info"
+        />
+        }
+      </div>
+    </div>
+
+    <div class="col-12 col-xl-6">
+      <div class="row g-4">
+        <profit class="col-12 col-sm-6" />
+        <average-daily-sales class="col-12 col-sm-6" />
+        <best-seller class="col-12 col-sm-6" />
+        <new-customers class="col-12 col-sm-6" />
+      </div>
+    </div>
+
+    <top-selling-products class="col-12 col-xl-6" />
+
+    <order-summary class="col-12 col-sm-4 col-lg-12 col-xxl-6" />
+    <top-sellers class="col-12 col-sm-8 col-lg-6 " />
+
+    <div class="col-12 col-lg-6 col-xxl-12">
+      <div class="row g-4">
+        <top-sales-locations class="col-12 col-md-6 col-lg-12 col-xxl-6" />
+        <revenue class="col-12 col-md-6 col-lg-12  col-xxl-6" />
+      </div>
+    </div>
+    <recent-orders class="col-12 col-xl-8" />
+    <transactions-history class="col-12 col-xl-4" />
+
+
+</section>

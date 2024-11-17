@@ -1,0 +1,25 @@
+section{
+  .label{
+    color: var(--bodyColor);
+    text-transform: capitalize;
+  }
+  .shape{
+    background-color: #e9fbf2;
+    border-radius: 2px;
+    border: 1px solid var(--successColor);
+    font-size: 12px;
+    color: var(--successColor);
+    min-width: 50px;
+    width: fit-content;
+    padding-inline: 2px;
+    text-align: center;
+    fa-icon{
+      margin-inline-end: 3px;
+    }
+    &.decrease{
+      color: var(--dangerColor);
+      border-color: var(--dangerColor);
+      background-color: #efe2e6;
+    }
+  }
+}

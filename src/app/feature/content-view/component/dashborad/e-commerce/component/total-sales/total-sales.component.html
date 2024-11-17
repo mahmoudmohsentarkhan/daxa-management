@@ -1,0 +1,25 @@
+<section styleSection>
+  <title-section title="total sales">
+    <menu-list #altContent></menu-list>
+  </title-section>
+  <div class="chart">
+    @if(
+      chartOptions &&
+      chartOptions.series && chartOptions.chart && chartOptions.fill &&
+      chartOptions.stroke && chartOptions.tooltip && chartOptions.dataLabels &&
+      chartOptions.legend && chartOptions.colors && chartOptions.forecastDataPoints
+      ){
+      <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [fill]="chartOptions.fill"
+      [dataLabels]="chartOptions.dataLabels"
+      [colors]="chartOptions.colors"
+      [forecastDataPoints]="chartOptions.forecastDataPoints"
+      [stroke]="chartOptions.stroke"
+      [legend]="chartOptions.legend"
+      [tooltip]="chartOptions.tooltip"
+      />
+    }
+  </div>
+</section>

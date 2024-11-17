@@ -1,0 +1,31 @@
+<section styleSection>
+  <title-section title="courses categories">
+    <menu-list #altContent/>
+  </title-section>
+  <div class="table">
+    <table mat-table [dataSource]="dataSource">
+      <ng-container matColumnDef="persone">
+        <td mat-cell *matCellDef="let element" >
+          <avatar-with-info
+          [data]="{img:element.img,title:element.name,subtitle:element.subtitle + '+ Courses'}"
+          />
+        </td>
+      </ng-container>
+
+      <mat-text-column name="enrolled" [dataAccessor]="getEnrolled"/>
+
+      <ng-container matColumnDef="status">
+        <td mat-cell *matCellDef="let element; let i = index" >
+         <button>
+          <mat-icon class="mat-18" matRipple>east</mat-icon>
+         </button>
+        </td>
+      </ng-container>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+  <mat-paginator
+    [pageSizeOptions]="[5, 10, 20]"
+    class="mat-paginator">
+  </mat-paginator>
+</section>

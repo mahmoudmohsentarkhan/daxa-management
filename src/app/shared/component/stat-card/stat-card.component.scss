@@ -1,0 +1,34 @@
+// @use '../../../assets/scss/global.scss';
+section{
+  background-color: var(--background-color, #fff) !important;
+  .icon{
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    background-color: var(--daxaColor);
+    border-radius: 100%;
+    color: #fff;
+    mat-icon{
+      font-size: 40px;
+      width:40px;
+      height: 40px;
+    }
+  }
+  .rate{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    color: var(--bodyColor);
+    font-size: 14px;
+  }
+}
+
+// ::ng-deep{
+//   .custome-title title-section .title {
+//     margin-bottom: 5px !important;
+//     h6{
+//       color: var(--bodyColor);
+//       font-size: 14px !important;
+//     }
+//   }
+// }

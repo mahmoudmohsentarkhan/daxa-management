@@ -1,0 +1,9 @@
+<section styleSection>
+  <title-section title="Billing Details"/>
+<ul>
+  @for (item of info(); track $index) {
+  <li>{{item.key}}: <span>{{item.value}}</span></li>
+  }
+</ul>
+
+</section>

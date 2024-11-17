@@ -1,0 +1,29 @@
+ul{
+  color: var(--bodyColor);
+  font-size: 14px;
+  li.chat{
+    margin-bottom: 15px;
+    gap: 15px;
+  }
+  .flex-row-reverse{
+    li:not(li.time){
+      background-color: var(--daxaColor);
+      color: #f4f6fc;
+      text-align: end;
+      border-start-end-radius: 0;
+    }
+  }
+  &.message{
+    li:not(li.time){
+      background-color: #f4f6fc;
+      padding: 10px;
+      margin-bottom: 5px;
+      border-radius: 10px;
+      border-start-start-radius: 0;
+
+    }
+    li.time{
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+section{
+  padding-inline: 0 !important;
+  .title{
+    padding-inline: 15px;
+  }
+  table{
+    border-spacing: 0;
+    margin-top: 10px;
+    width: 100%;
+    thead{
+      background-color: #e7effd;
+    }
+    tr{
+      th,td{
+        padding: 15px;
+        text-align: start;
+       &:is(td){
+        color: var(--bodyColor);
+       }
+       &:last-child{
+        text-align: end;
+       }
+      }
+      &.total{
+        td{
+          color: var(--blackColor);
+        }
+        &:last-child{
+          font-weight: 600;
+        }
+      }
+    }
+  }
+    .note{
+      padding-inline: 15px;
+      mat-form-field{
+        width: 100%;
+      }
+      button{
+        width: 100%;
+        border-radius: 5px;
+        padding-block: 25px;
+        background-color: var(--daxaColor) !important;
+      }
+    }
+}
+::ng-deep{
+    .note{
+      p{
+        font-weight: 600;
+        margin-top: 10px;
+      }
+      mat-form-field{
+        .mdc-text-field--filled:not(.mdc-text-field--disabled){
+          background-color: #fff;
+        }
+        .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before{
+          display: none;
+        }
+        .mat-mdc-text-field-wrapper{
+          border: 1px solid #dae0ec !important;
+        }
+      }
+    }
+}

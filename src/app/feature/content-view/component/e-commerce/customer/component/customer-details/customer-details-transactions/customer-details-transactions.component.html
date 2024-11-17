@@ -1,0 +1,33 @@
+<section styleSection class="no-padding">
+  <div class="padding-inline">
+    <title-section title="Transactions History">
+      <menu-list #altContent />
+    </title-section>
+  </div>
+  <div class="table mt">
+    <table mat-table [dataSource]="dataSource">
+
+      <mat-text-column name="id" headerText="order ID"/>
+
+      <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef>status</th>
+        <td mat-cell *matCellDef="let element" class="status">
+          <span [class]="element.status.toLowerCase()">{{element.status}}</span>
+        </td>
+      </ng-container>
+
+
+      <mat-text-column name="amount" [dataAccessor]="getAmount"/>
+
+      <mat-text-column name="rewards" [dataAccessor]="getRewards"/>
+      <mat-text-column name="date" />
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns;"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator
+      [pageSizeOptions]="[10, 20, 30  ]"
+      class="mat-paginator">
+    </mat-paginator>
+  </div>
+</section>

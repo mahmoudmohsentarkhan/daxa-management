@@ -1,0 +1,32 @@
+<section class="row g-4">
+  <div class="col-12 col-xl-8">
+    <div styleSection>
+      <title-section title="Order ID #2435679">
+        <span #altContent>Tracking ID #1004216609</span>
+      </title-section>
+      <stepper-status
+        [labels]="['Order Placed', 'Packed', 'Shipped', 'Delivered']"
+        [sublabels]="[
+          '22 Mar, 2024 - 11:35AM',
+          '23 Mar, 2024 - 10:35AM',
+          '24 Mar, 2024 - 3:45PM',
+          '25 Mar, 2024 - 2:21PM'
+        ]"
+        [postionActive]="4"
+        [whiteBackGround]="true"
+
+      />
+      <ul>
+        <p>View Details:</p>
+        <li><span>22 Mar, 2024 - 11:35AM:</span> Your order is now on warehouse. It’s being ready for shipped.</li>
+        <li><span>23 Mar, 2024 - 10:35AM:</span>Your order is on the way for deliver.</li>
+        <li><span>24 Mar, 2024 - 3:45PM:</span>Your order shipped.</li>
+        <li><span>25 Mar, 2024 - 2:21PM:</span>Your order delivered.</li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="col-12 col-xl-4">
+    <order-summary [orderTracking]="true"/>
+  </div>
+</section>

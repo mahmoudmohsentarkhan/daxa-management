@@ -1,0 +1,21 @@
+<section styleSection>
+  <title-section title="average daily sales" statistics="$5K+">
+    <stock-arrow [rate]="0.2" #altContent></stock-arrow>
+  </title-section>
+  @if(
+      chartOptions && chartOptions.series && chartOptions.chart &&
+      chartOptions.xaxis && chartOptions.tooltip && chartOptions.dataLabels &&
+      chartOptions.colors && chartOptions.grid
+      ){
+        <apx-chart
+        [series]="chartOptions.series"
+        [chart]="chartOptions.chart"
+        [dataLabels]="chartOptions.dataLabels"
+        [xaxis]="chartOptions.xaxis"
+        [tooltip]="chartOptions.tooltip"
+        [grid]="chartOptions.grid"
+        [colors]="chartOptions.colors"
+        />
+      }
+
+</section>

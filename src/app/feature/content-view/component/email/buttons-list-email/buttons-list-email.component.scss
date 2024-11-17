@@ -1,0 +1,16 @@
+ul{
+  color: var(--bodyColor);
+  gap: 10px;
+  li{
+    display: flex;
+    mat-icon{
+      font-size: 18px;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      &:hover{
+        background-color: #ecf4fe;
+      }
+    }
+  }
+}

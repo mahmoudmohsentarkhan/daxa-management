@@ -1,0 +1,41 @@
+<section styleSection>
+  <title-section title="top selling products">
+    <menu-list #altContent></menu-list>
+  </title-section>
+  <div class="table">
+    <div>
+      <table mat-table [dataSource]="dataSource">
+        <!-- Position Column -->
+        <ng-container matColumnDef="order">
+          <td mat-cell *matCellDef="let element"> 0{{element.id}}. </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <td mat-cell *matCellDef="let element" >
+
+            <avatar-with-info [data]="{img:element.img, title:element.title,subtitle:element.soldQuantity+'Items Sold'}"/>
+          </td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="itemCode">
+          <td mat-cell *matCellDef="let element">
+            Item: #ARP-{{element.itemCode}}
+          </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="price">
+          <td mat-cell *matCellDef="let element"> {{(element.price * element.soldQuantity) | currency:'USD':'symbol':'1.0' }} </td>
+        </ng-container>
+
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      <mat-paginator
+          [pageSizeOptions]="[5, 10, 20]"
+          class="mat-paginator">
+      </mat-paginator>
+    </div>
+  </div>
+</section>

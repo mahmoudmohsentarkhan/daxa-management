@@ -1,0 +1,63 @@
+section{
+  form{
+    margin-top: 10px;
+    label{
+      text-transform: capitalize;
+    }
+    mat-form-field{
+      margin-top: 5px;
+      width: 100%;
+      mat-label{
+        text-transform: capitalize;
+      }
+
+    }
+    .editor{
+      margin-bottom: 20px;
+    }
+  }
+  .action{
+    button{
+      border-radius: 5px;
+      padding: 15px;
+      color: #fff;
+      width: 100%;
+      text-transform: capitalize;
+      &.add{
+        background-color: var(--daxaColor) !important;
+      }
+      &.cancel{
+        background-color: var(--dangerColor) !important;
+      }
+    }
+  }
+}
+
+::ng-deep{
+  mat-calendar{
+    background-color: #fff !important;
+  }
+  .NgxEditor {
+    min-height: 358px !important;
+    max-height: 500px !important;
+    overflow-y: auto;
+  }
+  div.mat-mdc-select-panel{
+    background-color: #fff !important;
+    padding: 0px !important;
+    .mat-mdc-option{
+      min-height: 40px;
+    }
+  }
+  mat-form-field{
+    .div.mat-mdc-select-panel,.mdc-text-field--filled:not(.mdc-text-field--disabled){
+      background-color: #fff;
+    }
+    .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before{
+      display: none;
+    }
+    .mat-mdc-text-field-wrapper{
+      border: 1px solid #dae0ec !important;
+    }
+  }
+}

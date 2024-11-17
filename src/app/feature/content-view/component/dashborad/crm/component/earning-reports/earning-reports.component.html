@@ -1,0 +1,23 @@
+<section styleSection>
+  <title-section title="earning reports">
+    <menu-list #altContent/>
+  </title-section>
+  @if(
+      chartOptions &&
+      chartOptions.series && chartOptions.chart && chartOptions.labels &&
+      chartOptions.tooltip && chartOptions.dataLabels && chartOptions.legend &&
+       chartOptions.stroke
+      ){
+        <apx-chart
+        [series]="chartOptions.series"
+        [chart]="chartOptions.chart"
+        [dataLabels]="chartOptions.dataLabels"
+        [tooltip]="chartOptions.tooltip"
+        [labels]="chartOptions.labels"
+        [stroke]="chartOptions.stroke"
+        [legend]="chartOptions.legend"
+      />
+      }
+
+
+</section>

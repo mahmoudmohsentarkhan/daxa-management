@@ -1,0 +1,44 @@
+section{
+  form{
+    text-transform: capitalize;
+    mat-form-field{
+      width: 100%;
+
+    }
+    .action{
+      button{
+        border-radius: 5px;
+        background-color: var(--daxaColor);
+        width: 100px;
+        padding-block: 22px;
+      }
+      .icons{
+        color: var(--bodyColor);
+        gap: 10px;
+        mat-icon{
+          font-size: 20px;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+}
+
+::ng-deep  {
+  .NgxEditor {
+    min-height: 200px !important;
+    max-height: 350px !important;
+    overflow-y: auto;
+  }
+  .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: #fff !important;
+    border: 1px solid #dae0ec !important;
+    outline: none;
+    width: 100%;
+  }
+  div.mat-mdc-select-panel{
+    background-color: #fff !important;
+  }
+}

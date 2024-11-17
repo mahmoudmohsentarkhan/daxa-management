@@ -1,0 +1,87 @@
+section{
+  background-image: linear-gradient(180deg,#5c4edb,#796df6);
+  padding: 20px;
+  border-radius: 10px;
+  h6{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  ul{
+    position: relative;
+    &.project-status::before{
+      content: '';
+      border-top: 1px dashed #fff;
+      width: 100%;
+      position: absolute;
+      top: 28px;
+    }
+    li{
+      color: #fff;
+      position: relative;
+      font-weight: 600;
+      &.custome{color: var(--blackColor);}
+      span.position{
+        background: #978bff;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        border-radius: 100%;
+        border:1px dashed #fff;
+        margin-block-end: 15px;
+        transition: background-color 0.3s linear;
+        cursor: default;
+        &:hover, &.active{
+          background-color: var(--infoColor);
+        }
+      }
+      &:not(:first-child):not(:last-child) {
+        text-align: center;
+        span{
+          margin-inline: auto;
+        }
+
+      }
+      &:last-child{
+        text-align: end;
+        span{
+          margin-inline-start: auto;
+        }
+
+      }
+      .sublabel{
+        color: var(--bodyColor);
+        font-weight: 400;
+      }
+
+    }
+  }
+  .my-progress{
+    ul {
+      li:not(:first-child){
+        &:not(:last-child){
+          margin-right: -10px;
+        }
+        text-align: end;
+      }
+    }
+  }
+
+  &.custome{
+    background-image: none;
+    .project-status::before{
+      border-color: var(--daxaColor);
+    }
+    span.position,span.position:hover {
+      background-color:#fff !important;
+      border:1px dashed var(--daxaColor) !important;
+      color: var(--blackColor);
+      &.active{
+        background-color: var(--daxaColor)  !important;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<section class="row g-4">
+  <div class="col-12 col-md-7 col-xxl-8">
+    <div class="row g-4">
+        <ng-content #stepper ></ng-content>
+        <my-orders (totalPrice)="totalPrice($event)"/>
+    </div>
+  </div>
+  <order-summary class="col-12 col-md-5 col-xxl-4" [totalPrice]="total" [showPayment]="showPayment()"/>
+</section>

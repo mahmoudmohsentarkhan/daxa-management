@@ -1,0 +1,20 @@
+export type { IChartOptions } from './../models/ichartOptions';
+export type { IRefund } from './../models/iRefunds';
+export type { IReveiw } from './../models/iReview';
+export type { IUserPlatform } from './../models/iuser-platform';
+export type { IUserOrder } from './../models/iuser-order';
+export type { ITransaction } from './../models/itransaction';
+export type { IStudentProgress } from './../models/istudent-progress';
+export type { ISeller } from './../models/iseller';
+export type { IProduct } from './../models/iproduct';
+export type { Iproject } from './../models/iproject';
+export type { IOrder } from './../models/iorder';
+export type { IMemberTeam } from './../models/imember-team';
+export type { ILabeledData } from './../models/ilabeled-data';
+export type { Ifile } from './../models/ifile';
+export type { ICoursesCat } from './../models/icourses-cat';
+export type { Icourse } from './../models/icourse';
+export type { ICountryData } from './../models/icountry-data';
+export type { IContact } from './../models/icontact';
+export type { Iinstructor } from './../models/i-instructor';
+

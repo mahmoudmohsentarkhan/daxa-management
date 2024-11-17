@@ -1,0 +1,99 @@
+
+.no-padding{
+  padding-inline: 0px !important;
+}
+.padding-inline{
+  padding-inline:15px;
+}
+
+.table{
+  overflow-x: auto;
+  padding-bottom: 5px;
+  &.mt{
+    margin-top: 15px;
+  }
+  table{
+    background-color: transparent;
+    width: 100%;
+    tr {
+      color: var(--blackColor);
+      border-bottom: none !important;
+      td{
+        white-space: nowrap;
+        padding-block: 15px;
+        color: var(--bodyColor);
+        font-size: 16px;
+        &.black-color{
+          color: var(--blackColor);
+        }
+        &:last-child{
+          text-align: center;
+         button{
+          margin-top: 8px;
+          .icon {
+            font-size: 15px;
+            height: fit-content;
+          }
+          &:first-child{
+            color: var(--daxaColor);
+          }
+          &:last-child{
+            color: #919aa3;
+          }
+         }
+        }
+        &.status{
+          span{
+            padding: 2px 8px;
+            border-radius: 2px;
+            text-transform: capitalize;
+            &.deactive{
+              color: #e74c3c;
+              background-color: #e74c3c1a;
+            }
+            &.active{
+              color: #2ed47e;
+              background-color: #2ed47e1a;
+
+            }
+            &.shipped,&.approved{
+              color: var(--daxaColor);
+              background-color: #0f79f31a;
+            }
+            &.pending{
+              color:var(--warningColor);
+              background-color: #f1b31c1a;
+            }
+            &.successful{
+              color: var(--daxaColor);
+              background-color: #e6f1fe;
+            }
+            &.rejected{
+              color: var(--dangerColor);
+              background-color: #e74c3c1a;
+            }
+            &.confirmed{
+              color: var(--successColor);
+              background-color: #2ed47e1a;
+
+            }
+          }
+        }
+      }
+    }
+  }
+  .mat-mdc-row .mat-mdc-cell {
+    border-bottom: 1px dashed #e0e0e0;
+  }
+  .mat-mdc-header-row{
+    background-color: #e7effd;
+    text-transform: capitalize;
+    font-size: 16px;
+    .mat-mdc-header-cell{
+      border: none;
+    }
+  }
+}
+mat-paginator{
+  overflow: hidden;
+}

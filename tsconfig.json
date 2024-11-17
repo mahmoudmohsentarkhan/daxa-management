@@ -1,0 +1,57 @@
+/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
+/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./dist/out-tsc",
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": false,
+    "experimentalDecorators": true,
+    "moduleResolution": "bundler",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "lib": [
+      "ES2022",
+      "dom"
+    ],
+    "paths": {
+      "@app/shared":["app/index/shared/shared-index.ts"],
+      "@app/ecommerce":["app/index/e-commerce/e-commerce-index.ts"],
+      "@app/ecommerce/shared":["app/index/e-commerce/e-commerces-shared-index.ts"],
+      "@app/ecommerce/customer":["app/index/e-commerce/customer-index.ts"],
+      "@app/ecommerce/category":["app/index/e-commerce/category-index.ts"],
+      "@app/ecommerce/seller":["app/index/e-commerce/seller-index.ts"],
+      "@app/ecommerce/product":["app/index/e-commerce/product-index.ts"],
+      "@app/ecommerce/order":["app/index/e-commerce/order-index.ts"],
+
+      "@app/dashobard": [ "app/index/dashboard/dashboard-index.ts"],
+      "@app/dashobard/crm": [ "app/index/dashboard/crm-dashborad-index.ts"],
+      "@app/dashobard/lms": [ "app/index/dashboard/lms-dashboard-index.ts"],
+      "@app/dashobard/ecommerce": [ "app/index/dashboard/e-commerce-dashboard-index.ts"],
+      "@app/dashobard/project": [ "app/index/dashboard/project-dashboard-index.ts"],
+      "@app/email": [ "app/index/email-index.ts"],
+      "@app/file": [ "app/index/file-index.ts"],
+      "@app/service": [ "app/index/service-index.ts"],
+      "@app/enum": [ "app/index/enums-index.ts"],
+      "@app/interface": [ "app/index/interface-index.ts"]
+
+
+    }
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

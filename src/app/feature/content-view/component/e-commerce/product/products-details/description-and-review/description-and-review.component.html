@@ -1,0 +1,9 @@
+<section>
+  <div class="btn ps-lg-5">
+    <button (click)="showDescription()" [ngClass]="{'active': nameCurrentComponent == 'description'}">Description</button>
+    <button (click)="showRating()" [ngClass]="{'active': nameCurrentComponent == 'rating'}">Ratings & Reviews</button>
+  </div>
+  <div class="content">
+    <ng-container *ngComponentOutlet="currentComponent"></ng-container>
+  </div>
+</section>

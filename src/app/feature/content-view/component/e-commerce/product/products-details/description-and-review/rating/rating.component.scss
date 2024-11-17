@@ -1,0 +1,22 @@
+section{
+  margin-bottom: 25px;
+  title-section{
+    color: var(--blackColor);
+  }
+  .overall-rating{
+    p{
+      margin-bottom: 0;
+    }
+    b{
+      font-size: 25px;
+      color: var(--blackColor);
+    }
+  }
+  ul{
+    app-progress-bar{
+      width: 100%;
+      padding-inline: 50px;
+    }
+  }
+  
+}

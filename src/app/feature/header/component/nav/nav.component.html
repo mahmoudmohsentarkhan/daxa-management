@@ -1,0 +1,29 @@
+<ul>
+  <li>
+    <button class="icon" (click)="onButtonClick($event,'notification')" >
+      <fa-icon [icon]="faBell"/>
+    </button>
+    @if (activeDropDown == 'notification') {
+        <drop-down @fadeInOut [head]="{subtitle:'Notifications (03)',clear:'Clear All'}" [tail]="{name:'See All Notifications',anchor:'string'}"></drop-down>
+    }
+  </li>
+  <li>
+    <button class="icon" (click)="onButtonClick($event,'notification')">
+      <fa-icon [icon]="faEnvelope"/>
+    </button>
+    @if (activeDropDown == 'message') {
+      <drop-down @fadeInOut [head]="{subtitle:'Messages (03)',clear:'Clear All'}" [tail]="{name:'See All Notifications',anchor:'string'}"></drop-down>
+    }
+  </li>
+  <li>
+    <button class="icon">
+      <fa-icon [icon]="faCalendar"/>
+    </button>
+  </li>
+  <li>
+    <button class="icon">
+      <fa-icon [icon]="faLanguage"/>
+    </button>
+  </li>
+
+</ul>

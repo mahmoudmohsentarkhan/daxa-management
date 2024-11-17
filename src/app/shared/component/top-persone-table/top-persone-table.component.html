@@ -1,0 +1,33 @@
+<div class="table">
+  <div>
+    <table mat-table [dataSource]="dataSource">
+      @if (showIdCol) {
+        <ng-container matColumnDef="id">
+          <td mat-cell *matCellDef="let index = index"> {{(index + 1 < 10)?'0'+ (index+1) :index}}. </td>
+        </ng-container>
+      }
+
+      <ng-container matColumnDef="persone">
+        <td mat-cell *matCellDef="let element" >
+          <div class="product-info d-flex align-items-center">
+            <div class="img me-4">
+              <img [src]="element.img" width="50" height="50">
+            </div>
+            <div class="category">
+              <p>{{element.name | titlecase}}</p>
+              <span>#{{element.id}}</span>
+            </div>
+          </div>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="rate">
+        <td mat-cell *matCellDef="let element">
+          <app-rate [rate]="element.rate"/>
+          </td>
+      </ng-container>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+
+</div>

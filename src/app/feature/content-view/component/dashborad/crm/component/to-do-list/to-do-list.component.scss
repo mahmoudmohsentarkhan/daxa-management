@@ -1,0 +1,23 @@
+section{
+  title-section{
+    div.alt-content{
+      gap:25px;
+      .search{
+        background-color: #f4f6fc;
+        border-radius: 5px;
+        padding: 10px;
+        mat-icon {
+          padding-inline: 5px 10px;
+        }
+        input{
+          &::placeholder{
+            font-size: 14px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,27 @@
+title-section{
+  ul{
+    font-size: 14px;
+    gap: 15px;
+    color: var(--bodyColor);
+    font-weight: 400;
+    li{
+      position: relative;
+      &::before{
+        content: '';
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background-color: #777;
+        position: absolute;
+        left: -8px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      a{
+        text-decoration: none;
+        color: #000;
+      }
+    }
+
+  }
+}

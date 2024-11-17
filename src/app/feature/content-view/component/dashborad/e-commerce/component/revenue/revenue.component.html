@@ -1,0 +1,21 @@
+<section styleSection>
+  <title-section title="revenue" >
+    <menu-list #altContent/>
+  </title-section>
+  @if(
+    chartOptions &&
+    chartOptions.series && chartOptions.chart && chartOptions.fill &&
+    chartOptions.xaxis && chartOptions.tooltip && chartOptions.dataLabels &&
+    chartOptions.legend && chartOptions.colors
+    ){
+    <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [colors]="chartOptions.colors"
+      [dataLabels]="chartOptions.dataLabels"
+      [xaxis]="chartOptions.xaxis"
+      [legend]="chartOptions.legend"
+      [fill]="chartOptions.fill"
+      [tooltip]="chartOptions.tooltip"/>
+  }
+</section>

@@ -1,0 +1,80 @@
+<section>
+  <div class="row g-4">
+    <div class="col-12 col-lg-4" >
+      <div class="messages" styleSection>
+        <div class="header">
+          <title-section title="messages"/>
+          <app-search />
+        </div>
+        <mat-tab-group dynamicHeight animationDuration="0">
+          <mat-tab label="All Message">
+            <ng-template matTabContent>
+              <ul>
+                @for (item of [].constructor(17); track $index) {
+                  <li class="test">
+                    <avatar-with-info [data]="{img:('https://angular.hibootstrap.com/daxa/images/users/user'+($index+1).toString()+'.jpg'), title:'Marcia Baker', subtitle:'Active Now'}"/>
+                  </li>
+                }
+
+              </ul>
+            </ng-template>
+          </mat-tab>
+          <mat-tab label="Group Chat">
+            <ng-template matTabContent>
+              <ul>
+                @for (item of [].constructor(15); track $index) {
+                  <li class="test">
+                    <avatar-with-info [data]="{img:('https://angular.hibootstrap.com/daxa/images/users/user'+($index+2).toString()+'.jpg'), title:'Marcia Baker', subtitle:'Active Now'}"/>
+                  </li>
+                }
+
+              </ul>
+            </ng-template>
+          </mat-tab>
+          <mat-tab label="Contacts">
+            <ng-template matTabContent>
+              <ul>
+                @for (item of [].constructor(13); track $index) {
+                  <li class="test">
+                    <avatar-with-info [data]="{img:('https://angular.hibootstrap.com/daxa/images/users/user'+($index+3).toString()+'.jpg'), title:'Marcia Baker', subtitle:'Active Now'}"/>
+                  </li>
+                }
+
+              </ul>
+            </ng-template>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+    <div class="col-12 chat-room col-lg-8" >
+      <div style="padding-inline: 0 !important;" styleSection>
+        <div class="chat-header d-flex justify-content-between align-items-center pb-4">
+          <avatar-with-info [data]="{img:'https://angular.hibootstrap.com/daxa/images/users/user1.jpg', title:'Marcia Baker', subtitle:'Active Now'}"/>
+          <div class="icons d-flex">
+            <mat-icon matRipple fontIcon="call" />
+            <mat-icon matRipple fontIcon="videocam" />
+            <mat-icon matRipple fontIcon="more_horiz" />
+          </div>
+        </div>
+        <div class="chat-message">
+          <chat-message />
+        </div>
+        <div class="chat-footer d-flex align-items-center">
+          <div class="icons">
+            <mat-icon matRipple fontIcon="sentiment_satisfied" />
+            <mat-icon matRipple fontIcon="attach_file" />
+            <mat-icon matRipple fontIcon="mic_none" />
+            <mat-icon matRipple fontIcon="image" />
+          </div>
+          <div class="submit-message">
+            <mat-form-field class="example-full-width">
+              <mat-label>Type your message....</mat-label>
+              <mat-icon matSuffix >send</mat-icon>
+              <input matInput >
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

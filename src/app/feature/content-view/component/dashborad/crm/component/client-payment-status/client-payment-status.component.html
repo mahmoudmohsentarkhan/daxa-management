@@ -1,0 +1,24 @@
+<section styleSection>
+  <title-section title="client payment status" />
+
+  @if(
+      chartOptions &&
+      chartOptions.series && chartOptions.chart && chartOptions.labels &&
+      chartOptions.tooltip && chartOptions.dataLabels && chartOptions.legend &&
+       chartOptions.stroke && chartOptions.fill && chartOptions.responsive && chartOptions.yaxis
+      ){
+        <apx-chart
+        [series]="chartOptions.series"
+        [chart]="chartOptions.chart"
+        [fill]="chartOptions.fill"
+        [responsive]="chartOptions.responsive"
+        [stroke]="chartOptions.stroke"
+        [legend]="chartOptions.legend"
+        [tooltip]="chartOptions.tooltip"
+        [labels]="chartOptions.labels"
+        [dataLabels]="chartOptions.dataLabels"
+        [yaxis]="chartOptions.yaxis"
+      />
+      }
+
+</section>

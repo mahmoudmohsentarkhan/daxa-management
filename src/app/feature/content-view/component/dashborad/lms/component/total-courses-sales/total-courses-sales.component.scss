@@ -1,0 +1,14 @@
+section{
+overflow: hidden;
+
+.chart{
+  position: relative;
+  height: 180px;
+  app-chart{
+    position: absolute;
+    top: -58px;
+    right: -25px;
+  }
+}
+
+}

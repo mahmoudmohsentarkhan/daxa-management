@@ -1,0 +1,13 @@
+<header class="d-flex">
+  <mat-icon (click)="toggle()" >{{show?'close':'menu'}}</mat-icon>
+  @if (show) {
+    <div class="d-flex align-items-center justify-content-between">
+      <app-search></app-search>
+      <app-nav></app-nav>
+    </div>
+  }
+  <button class="profile-toggle-btn" [ngClass]="{'active': true}">
+    <img src="https://angular.hibootstrap.com/daxa/images/users/user6.jpg" alt="mahmoudtarkhan-profile" width="40" height="40" >
+    <fa-icon [icon]="faAngleDown"/>
+  </button>
+</header>

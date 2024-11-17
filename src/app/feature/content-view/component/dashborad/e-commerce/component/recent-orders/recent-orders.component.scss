@@ -1,0 +1,86 @@
+section{
+  title-section{
+    div.alt-content{
+      gap:25px;
+      .search{
+        background-color: #f4f6fc;
+        border-radius: 5px;
+        padding: 10px;
+        fa-icon {
+
+          padding-inline: 10px 15px;
+        }
+        input{
+          &::placeholder{
+            font-size: 14px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+  .table{
+    table{
+      background-color: transparent;
+      tr {
+        td{
+          &:first-child{
+            padding-inline-start: 15px;
+          }
+          &:last-child{
+            text-align: center;
+           button{
+            margin-top: 8px;
+            .icon {
+              font-size: 15px;
+              height: fit-content;
+            }
+            &:first-child{
+              color: #0f79f3;
+            }
+            &:last-child{
+              color: #919aa3;
+            }
+           }
+          }
+          &.status{
+            span{
+              padding: 2px 8px;
+              border-radius: 2px;
+              &.shipped{
+                color: #0f79f3;
+                background-color: #0f79f31a;
+              }
+              &.pending{
+                color:#ffb264;
+                background-color: #f1b31c1a;
+              }
+              &.rejected{
+                color: #e74c3c;
+                background-color: #e74c3c1a;
+              }
+              &.confirmed{
+                color: #2ed47e;
+                background-color: #2ed47e1a;
+
+              }
+            }
+          }
+        }
+        .info{
+          .name{
+            font-weight: 500;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+::ng-deep{
+  .table table tr:first-child td{
+    padding-top: 15px !important;
+
+  }
+}

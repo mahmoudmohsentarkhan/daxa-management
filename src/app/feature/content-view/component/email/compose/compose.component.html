@@ -1,0 +1,87 @@
+<section styleSection>
+  <title-section title="New Message">
+    <buttons-list-email #altContent/>
+  </title-section>
+  <form class="row" #formTask="ngForm">
+    <div class="col-6">
+      <label class="main-label d-block">to</label>
+      <mat-form-field>
+        <mat-label>to</mat-label>
+        <mat-select ngModel name="to" #to="ngModel" multiple>
+          <mat-option value="hello@james.com">hello&#64;james.com</mat-option>
+          <mat-option value="hello@andy.com">hello&#64;andy.com</mat-option>
+          <mat-option value="hello@mateo.com">hello&#64;mateo.com</mat-option>
+          <mat-option value="hello@luca.com">hello&#64;luca.com</mat-option>
+          <mat-option value="hello@sausage.com">hello&#64;sausage.com</mat-option>
+          <mat-option value="hello@tomato.com">hello&#64;tomato.com</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="col-6">
+      <label class="main-label d-block">cc</label>
+      <mat-form-field>
+        <mat-label>cc</mat-label>
+        <mat-select ngModel name="cc" #cc="ngModel" multiple>
+          <mat-option value="hello@james.com">hello&#64;james.com</mat-option>
+          <mat-option value="hello@andy.com">hello&#64;andy.com</mat-option>
+          <mat-option value="hello@mateo.com">hello&#64;mateo.com</mat-option>
+          <mat-option value="hello@luca.com">hello&#64;luca.com</mat-option>
+          <mat-option value="hello@sausage.com">hello&#64;sausage.com</mat-option>
+          <mat-option value="hello@tomato.com">hello&#64;tomato.com</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+
+    <div class="col-6">
+      <label class="main-label d-block">bcc</label>
+      <mat-form-field>
+        <mat-label>bcc</mat-label>
+        <mat-select ngModel name="bcc" #bcc="ngModel" multiple>
+          <mat-option value="hello@james.com">hello&#64;james.com</mat-option>
+          <mat-option value="hello@andy.com">hello&#64;andy.com</mat-option>
+          <mat-option value="hello@mateo.com">hello&#64;mateo.com</mat-option>
+          <mat-option value="hello@luca.com">hello&#64;luca.com</mat-option>
+          <mat-option value="hello@sausage.com">hello&#64;sausage.com</mat-option>
+          <mat-option value="hello@tomato.com">hello&#64;tomato.com</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="col-6">
+      <label class="main-label d-block">subject</label>
+      <mat-form-field>
+        <mat-label>write your subject</mat-label>
+        <mat-select ngModel name="status" required #status="ngModel">
+          <mat-option value="In Progress">In Progress</mat-option>
+          <mat-option value="Pending">Pending</mat-option>
+          <mat-option value="Completed">Completed</mat-option>
+          <mat-option value="Not Started">Not Started</mat-option>
+        </mat-select>
+        @if (status.hasError('required')) {
+          <mat-error>You must enter status</mat-error>
+        }
+      </mat-form-field>
+    </div>
+
+    <div class="col-12">
+      <label class="main-label d-block">your email</label>
+      <div class="NgxEditor__Wrapper">
+        <ngx-editor-menu [editor]="editor"> </ngx-editor-menu>
+        <ngx-editor [editor]="editor" name="editor" [ngModel]="html" [disabled]="false" [placeholder]="'Type here...'"></ngx-editor>
+      </div>
+    </div>
+
+    <div class="action mt-4 d-flex">
+      <button mat-flat-button matRipple>Send</button>
+      <div class="icons ms-4 d-flex align-items-center">
+        <mat-icon fontIcon="sentiment_satisfied" matRipple/>
+        <mat-icon fontIcon="attach_file" matRipple/>
+        <mat-icon fontIcon="image" matRipple/>
+      </div>
+    </div>
+  </form>
+
+
+</section>

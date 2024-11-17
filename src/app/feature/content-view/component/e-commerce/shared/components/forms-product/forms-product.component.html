@@ -1,0 +1,252 @@
+<section styleSection>
+  <form class="row" [formGroup]="fmProduct">
+    <div class="add col-12 col-lg-8">
+      <title-section [title]="isEdit() ? 'update product' : 'add product'" />
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <label> Product Title </label>
+          <mat-form-field>
+            <mat-label>select</mat-label>
+            <input
+              matInput
+              placeholder="E.g Hand watch"
+              formControlName="title"
+            />
+          </mat-form-field>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label> Product Type</label>
+          <mat-form-field>
+            <mat-label>Product Type</mat-label>
+            <mat-select formControlName="type">
+              <mat-option value="digital product">Digital Product</mat-option>
+              <mat-option value="physical product">Physical Product</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label> SKU </label>
+          <mat-form-field>
+            <mat-label>SKU </mat-label>
+            <input
+              matInput
+              placeholder="E.g Hand watch"
+              formControlName="sku"
+            />
+          </mat-form-field>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label> Brand Name</label>
+          <mat-form-field>
+            <mat-label>select</mat-label>
+            <mat-select formControlName="brand">
+              @for (brand of brands; track $index) {
+              <mat-option value="brand">{{ brand }}</mat-option>
+              }
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label> Regular Price </label>
+          <mat-form-field>
+            <mat-label>Regular Price</mat-label>
+            <input
+              matInput
+              placeholder="E.g Hand watch"
+              formControlName="regularPrice"
+            />
+          </mat-form-field>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label> Sale Price </label>
+          <mat-form-field>
+            <mat-label>Sale Price</mat-label>
+            <input
+              matInput
+              placeholder="E.g Hand watch"
+              formControlName="salePrice"
+            />
+          </mat-form-field>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label> Publish Schedule </label>
+          <mat-form-field>
+            <mat-label>choose data</mat-label>
+            <input
+              matInput
+              [matDatepicker]="publishSchedule"
+              formControlName="publishSchedule"
+            />
+            <mat-datepicker-toggle
+              matIconSuffix
+              [for]="publishSchedule"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #publishSchedule></mat-datepicker>
+          </mat-form-field>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label> Product in Stock </label>
+          <mat-form-field>
+            <mat-label>Product in Stock</mat-label>
+            <input
+              matInput
+              placeholder="E.g Hand watch"
+              formControlName="stock"
+            />
+          </mat-form-field>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label> Product ID </label>
+          <mat-form-field>
+            <mat-label>Product ID</mat-label>
+            <input matInput placeholder="E.g Hand watch" formControlName="id" />
+          </mat-form-field>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label> Discout / Offer </label>
+          <mat-form-field>
+            <mat-label>Discout / Offer</mat-label>
+            <input
+              matInput
+              placeholder="E.g Hand watch"
+              formControlName="discount"
+            />
+          </mat-form-field>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label> Available Date </label>
+          <mat-form-field>
+            <mat-label>choose data</mat-label>
+            <input
+              matInput
+              [matDatepicker]="availableData"
+              formControlName="availableDate"
+            />
+            <mat-datepicker-toggle
+              matIconSuffix
+              [for]="availableData"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #availableData></mat-datepicker>
+          </mat-form-field>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label> End Date </label>
+          <mat-form-field>
+            <mat-label>choose data</mat-label>
+            <input
+              matInput
+              [matDatepicker]="endData"
+              formControlName="endDate"
+            />
+            <mat-datepicker-toggle
+              matIconSuffix
+              [for]="endData"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #endData></mat-datepicker>
+          </mat-form-field>
+        </div>
+
+        <div class="col-12">
+          <label> Order Note (optional) </label>
+          <mat-form-field>
+            <mat-label>Write your note here....</mat-label>
+            <textarea
+              matInput
+              rows="6"
+              placeholder="E.g. It makes me feel..."
+            ></textarea>
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+    <div class="product-category-and-tags col-12 col-lg-4">
+      <title-section title="Product Category & Tags" />
+      <div>
+        <label> category </label>
+        <mat-form-field>
+          <mat-label>select</mat-label>
+          <mat-select formControlName="category">
+            @for (category of cateogires; track $index) {
+            <mat-option value="category">{{ category }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <label> vendor </label>
+        <mat-form-field>
+          <mat-label>select</mat-label>
+          <mat-select formControlName="vendor">
+            @for (vendor of vendors; track $index) {
+            <mat-option value="vendor">{{ vendor }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <label> collection </label>
+        <mat-form-field>
+          <mat-label>select</mat-label>
+          <mat-select formControlName="collection">
+            @for (collection of collections; track $index) {
+            <mat-option value="collection">{{ collection }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div formArrayName="tags">
+        @for (tag of tagsList.controls; track $index;) {
+        <label> tags </label>
+        <mat-form-field>
+          <mat-label>select</mat-label>
+          <mat-select multiple [formControlName]="$index">
+            @for (tag of tags; track $index) {
+            <mat-option [value]="tag">{{ tag }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+        }
+      </div>
+
+      <div>
+        <label class="main-label d-block">Product Description</label>
+        <div class="editor">
+          <ngx-editor-menu [editor]="editor"> </ngx-editor-menu>
+          <ngx-editor [editor]="editor" name="editor" formControlName="description" [disabled]="false" [placeholder]="'Type here...'"></ngx-editor>
+        </div>
+      </div>
+
+    </div>
+  </form>
+  <div class="action row g-2">
+    <div class="col-3">
+      <button
+        mat-flat-button
+        matRipple
+        class="add"
+        (click)="isEdit() ? update() : create()"
+      >
+        {{ isEdit() ? "update" : "create product" }}
+      </button>
+    </div>
+    <div class="col-2">
+      <button mat-flat-button matRipple class="cancel" (click)="cancel()">
+        cancel
+      </button>
+    </div>
+  </div>
+</section>

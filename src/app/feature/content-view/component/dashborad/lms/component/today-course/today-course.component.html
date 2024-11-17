@@ -1,0 +1,17 @@
+<section styleSection>
+  <title-section title="today's course" />
+  <div class="course-cards">
+    <course-card [ngClass]="{'active': showCardNum() == 0}" [data]="{img:'https://angular.hibootstrap.com/daxa/images/courses/course7.jpg', title:'Introduction To Python',salary:30, content:'12 sections • 43 lectures • 23h 20m'}"/>
+    <course-card [ngClass]="{'active': showCardNum() == 1}" [data]="{img:'https://angular.hibootstrap.com/daxa/images/courses/course8.jpg', title:'Graphic Design Basics',salary:25, content:'12 sections • 43 lectures • 23h 20m'}"/>
+    <course-card [ngClass]="{'active': showCardNum() == 2}" [data]="{img:'https://angular.hibootstrap.com/daxa/images/courses/course9.jpg', title:'UI/UX Design Essentials',salary:23, content:'16 sections • 65 lectures • 11h 20m'}"/>
+  </div>
+  <div class="view-details d-flex justify-content-between align-items-center mt-1">
+    <div class="dots d-flex">
+      <span [ngClass]="{'active': showCardNum() == 0}" (click)="setCardNum(0)"></span>
+      <span [ngClass]="{'active': showCardNum() == 1}" (click)="setCardNum(1)"></span>
+      <span [ngClass]="{'active': showCardNum() == 2}" (click)="setCardNum(2)"></span>
+    </div>
+    <a>+ view details</a>
+  </div>
+
+</section>

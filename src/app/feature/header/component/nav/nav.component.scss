@@ -1,0 +1,16 @@
+ul{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 25px;
+  li{
+    position: relative;
+    height: fit-content;
+    button{
+      fa-icon{
+        font-size: 18px;
+      }
+
+    }
+  }
+}

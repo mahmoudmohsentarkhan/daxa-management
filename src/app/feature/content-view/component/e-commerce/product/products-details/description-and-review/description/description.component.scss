@@ -1,0 +1,8 @@
+.description{
+  ul{
+    list-style: inside disc ;
+    ::marker{
+      color: var(--infoColor);
+    }
+  }
+}

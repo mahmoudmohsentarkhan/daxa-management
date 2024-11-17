@@ -1,0 +1,13 @@
+<section styleSection>
+  <title-section title="new customers this month" statistics="2,537">
+      <stock-arrow [rate]="0.3" #altContent/>
+  </title-section>
+  <ul class="join-today d-flex">
+    @for (item of [].constructor(6); track $index) {
+      <li>
+        <img src="https://angular.hibootstrap.com/daxa/images/users/user16.jpg">
+      </li>
+    }
+    <li><b>7+</b></li>
+  </ul>
+</section>

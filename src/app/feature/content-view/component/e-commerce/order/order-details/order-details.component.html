@@ -1,0 +1,12 @@
+<section class="row g-4">
+  <e-commerce-cart [showPayment]="true">
+    <stepper-status #stepper title="Tracking ID: 000346798254" [labels]="['Order Placed','Packed','Shipped','Delivered']" [postionActive]="3"/>
+  </e-commerce-cart>
+ <div>
+  <div class="row">
+    @for (info of infoList; track $index) {
+      <order-info class="col-4" [info]="info"/>
+    }
+  </div>
+ </div>
+</section>

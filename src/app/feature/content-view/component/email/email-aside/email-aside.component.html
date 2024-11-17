@@ -1,0 +1,13 @@
+<section styleSection>
+  <app-search />
+  <button mat-flat-button MatRipple class="compose-email">compose email</button>
+  <ul class="lists">
+    @for (item of lists; track $index) {
+      <li class="d-flex align-items-center">
+        <mat-icon [fontIcon]="item.icon"/>
+        {{item.title}}
+      </li>
+    }
+  </ul>
+  <button>+ created new label</button>
+</section>

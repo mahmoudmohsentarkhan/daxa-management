@@ -1,0 +1,90 @@
+<section>
+  <h2 mat-dialog-title class="d-flex justify-content-between">
+    <span>Add New Task</span>
+    <mat-icon fontIcon="close" matRipple mat-dialog-close></mat-icon>
+  </h2>
+  <mat-dialog-content class="mat-typography">
+    <form class="row" #formTask="ngForm">
+      <div class="col-12">
+        <label class="main-label d-block">Task Name</label>
+        <mat-form-field>
+          <mat-label>Task Name</mat-label>
+          <input matInput ngModel name="name" required #name="ngModel">
+          @if (name.hasError('required')) {
+            <mat-error>You must enter name task</mat-error>
+          }
+        </mat-form-field>
+      </div>
+
+      <div class="col-6">
+        <label class="main-label d-block">Assigned To</label>
+        <mat-form-field>
+          <mat-label>Assigned To</mat-label>
+          <mat-select ngModel name="assignedTo" required #assignedTo="ngModel">
+            <mat-option value="Shawn Kennedy">Shawn Kennedy</mat-option>
+            <mat-option value="Roberto Cruz">Roberto Cruz</mat-option>
+            <mat-option value="Juli Johnson">Juli Johnson</mat-option>
+            <mat-option value="Catalina Engles">Catalina Engles</mat-option>
+            <mat-option value="Louis Nagle">Louis Nagle</mat-option>
+            <mat-option value="Michael Marquez">Michael Marquez</mat-option>
+          </mat-select>
+          @if (assignedTo.hasError('required')) {
+            <mat-error>You must enter assigned to</mat-error>
+          }
+        </mat-form-field>
+      </div>
+
+      <div class="col-6">
+        <label class="main-label d-block">Assigned To</label>
+        <mat-form-field>
+          <mat-label>Due Date</mat-label>
+          <input matInput [matDatepicker]="picker" ngModel name="dueDate" required #dueDate="ngModel">
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+          @if (dueDate.hasError('required')) {
+            <mat-error>You must enter date</mat-error>
+          }
+        </mat-form-field>
+      </div>
+
+      <div class="col-6">
+        <label class="main-label d-block">Priority</label>
+        <mat-form-field>
+          <mat-label>Priority</mat-label>
+          <mat-select ngModel name="priority" required #priority="ngModel">
+            <mat-option value="High">High</mat-option>
+            <mat-option value="Medium">Medium</mat-option>
+            <mat-option value="Low">Low</mat-option>
+          </mat-select>
+          @if (priority.hasError('required')) {
+            <mat-error>You must enter priority</mat-error>
+          }
+        </mat-form-field>
+      </div>
+
+      <div class="col-6">
+        <label class="main-label d-block">Status</label>
+        <mat-form-field>
+          <mat-label>Status</mat-label>
+          <mat-select ngModel name="status" required #status="ngModel">
+            <mat-option value="In Progress">In Progress</mat-option>
+            <mat-option value="Pending">Pending</mat-option>
+            <mat-option value="Completed">Completed</mat-option>
+            <mat-option value="Not Started">Not Started</mat-option>
+          </mat-select>
+          @if (status.hasError('required')) {
+            <mat-error>You must enter status</mat-error>
+          }
+
+        </mat-form-field>
+
+      </div>
+    </form>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end">
+    <button mat-button matRipple mat-dialog-close>Cancel</button>
+    <button mat-button [mat-dialog-close]="formTask.value" [disabled]="formTask.invalid">Created</button>
+  </mat-dialog-actions>
+
+</section>

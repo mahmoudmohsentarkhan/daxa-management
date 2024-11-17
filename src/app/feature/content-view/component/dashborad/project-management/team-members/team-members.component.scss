@@ -1,0 +1,30 @@
+section{
+  padding-inline: 0 !important;
+  .container-title-section{
+    padding-inline: 15px;
+    title-section{
+      button{
+        color: var(--bodyColor);
+        font-size: 15px;
+        padding: 2px;
+        &:hover{
+          background-color: #ecf4fe;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}
+
+::ng-deep{
+  .team-members-table{
+    table{
+      tr{
+        td{
+          border: none !important;
+          padding-block: 9px;
+        }
+      }
+    }
+  }
+}

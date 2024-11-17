@@ -1,0 +1,34 @@
+aside{
+  ul.sidebar-list{
+    li{
+      text-transform: capitalize;
+      padding-block: 8px;
+      cursor: pointer;
+      transition: all 0.2s linear;
+      mat-icon{
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+      }
+      &.active, &:hover{
+        color: var(--daxaColor);
+      }
+    }
+  }
+.storage-status{
+  .progress-bar{
+    height: 15px;
+    background-color: #f4f6fc;
+    position: relative;
+    span{
+      position: absolute;
+      height: 100%;
+      background-color: var(--daxaColor);
+    }
+  }
+  p{
+    color: var(--bodyColor);
+  }
+}
+}
+

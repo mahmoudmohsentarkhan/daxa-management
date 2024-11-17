@@ -1,0 +1,92 @@
+<section styleSection>
+  <title-section title="filter"/>
+  <ul>
+    <li>
+      <div class="title">Search</div>
+      <app-search/>
+    </li>
+  </ul>
+
+  <div class="part items-for">
+    <ul>
+      <li><mat-checkbox >women</mat-checkbox></li>
+      <li><mat-checkbox >men</mat-checkbox></li>
+      <li><mat-checkbox >kids</mat-checkbox></li>
+      <li><mat-checkbox >accessories</mat-checkbox></li>
+    </ul>
+  </div>
+
+  <div class="part categories">
+    <div class="title">
+      categories
+    </div>
+    <ul>
+      @for (cat of categories; track $index) {
+        <li class="d-flex justify-content-between align-items-center">
+          <mat-checkbox >{{cat.name}}</mat-checkbox>
+          <small>{{cat.size}}</small>
+        </li>
+      }
+
+    </ul>
+
+  </div>
+
+  <div class="part brands">
+    <div class="title">
+      brands
+    </div>
+    <ul>
+      @for (brand of brands; track $index) {
+        <li class="d-flex justify-content-between align-items-center">
+          <mat-checkbox >{{brand.name}}</mat-checkbox>
+          <small>{{brand.size}}</small>
+        </li>
+      }
+    </ul>
+  </div>
+
+  <div class="part colors">
+    <div class="title">
+      colors
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+      @for (color of colors; track $index) {
+        <mat-checkbox color="secondary" [ngClass]="color"/>
+      }
+    </div>
+  </div>
+
+
+  <div class="part price">
+    <div class="title">
+      price
+    </div>
+    <mat-slider min="0" max="5000" w>
+      <input value="10" matSliderStartThumb #start>
+      <input value="4500" matSliderEndThumb #end>
+    </mat-slider>
+    <div class="result d-flex justify-content-between">
+      <small>${{start.value}}</small>
+      <small>${{end.value}}</small>
+    </div>
+  </div>
+
+
+
+  <div class="part brands">
+    <div class="title">
+      brands
+    </div>
+    <ul>
+      @for (rate of rates; track $index) {
+        <li class="d-flex justify-content-between align-items-center">
+          <mat-checkbox><app-rate [rate]="rate.rate"/></mat-checkbox>
+          <small>{{rate.size}}</small>
+        </li>
+      }
+    </ul>
+  </div>
+
+
+</section>

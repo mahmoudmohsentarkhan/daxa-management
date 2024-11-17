@@ -1,0 +1,19 @@
+@if(
+      chartOptions &&
+      chartOptions.series && chartOptions.chart && chartOptions.plotOptions &&
+      chartOptions.tooltip && chartOptions.dataLabels &&
+      chartOptions.xaxis && chartOptions.colors
+      ){
+        <apx-chart
+        [series]="chartOptions.series"
+        [chart]="chartOptions.chart"
+        [xaxis]="chartOptions.xaxis"
+        [plotOptions]="chartOptions.plotOptions"
+        [dataLabels]="chartOptions.dataLabels"
+        [xaxis]="chartOptions.xaxis"
+        [colors]="chartOptions.colors"
+        [tooltip]="chartOptions.tooltip"
+      >
+    </apx-chart>
+      }
+

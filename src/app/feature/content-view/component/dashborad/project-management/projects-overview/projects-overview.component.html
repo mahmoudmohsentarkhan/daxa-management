@@ -1,0 +1,15 @@
+<section styleSection>
+  <title-section title="projects overview" />
+  <div class="row g-4">
+    @for (card of cards; track $index) {
+      <stat-card
+        class="col-12 col-sm-6"
+        [title]="card.title"
+        [number]="card.number"
+        [imgIcon]="card.imgIcon"
+        [info]="card.info"
+        [iconBackColor]="card.iconBackColor"
+        />
+    }
+  </div>
+</section>

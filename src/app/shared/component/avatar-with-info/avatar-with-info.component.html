@@ -1,0 +1,16 @@
+<section class="product-info d-flex align-items-center">
+  @if (data()?.img) {
+    <div class="img me-2">
+      <img [src]="data()?.img">
+    </div>
+  }
+
+  <div class="info">
+    @if (data()?.title) {
+      <span class="title d-block">{{data()?.title}}</span>
+    }
+    @if (data()?.subtitle) {
+      <div class="sub-title">{{data()?.subtitle}}</div>
+    }
+  </div>
+</section>

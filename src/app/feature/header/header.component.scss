@@ -1,0 +1,67 @@
+@use "./../../../assets/scss/global.scss";
+header{
+  position: relative;
+  gap:15px;
+  align-items: center;
+  background-color: #fff;
+  padding: global.$altPadding;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  @media (max-width: 540px) {
+    border-radius:  0 !important;
+    margin-bottom: 20px;
+  }
+  div{
+    flex: 1;
+    width: 100%;
+    @media (max-width: 540px) {
+      width: 100%;
+      background: #fff;
+      padding: global.$altPadding;
+      padding-bottom: 5px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      flex-direction: column-reverse;
+      position: absolute;
+      top: 70px;
+      left: 0px;
+      z-index: 100;
+    }
+  }
+  mat-icon{
+    display: none;
+    @media (max-width: 540px) {
+      display: block;
+      font-size: 30px;
+      margin-right: auto;
+    }
+  }
+  .profile-toggle-btn{
+    fa-icon{
+      font-size: 18px;
+    }
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    &.active::after{
+      content: "";
+      width: 6px;
+      height: 6px;
+      background-color: var(--successColor);
+      outline: 2px solid #fff;
+      border-radius: 100%;
+      position: absolute;
+      right: 17px;
+      bottom: 2px;
+
+    }
+    fa-icon{
+      font-size: 12px;
+      color: #a3a1a1;
+    }
+    img{
+      border-radius: 100%;
+    }
+  }
+
+}

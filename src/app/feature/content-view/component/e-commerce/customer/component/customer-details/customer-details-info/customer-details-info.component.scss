@@ -1,0 +1,46 @@
+section{
+  gap:20px;
+  .img{
+    text-align: center;
+    img{
+      width: 160px;
+      height: 160px;
+      border-radius: 100%;
+    }
+    h2{
+      margin-block: 10px 5px;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1;
+      text-transform: capitalize;
+    }
+    span.email{
+      color: var(--bodyColor);
+    }
+  }
+  .details{
+    margin-top: 40px;
+    .title{
+      font-size: 18px;
+      font-weight: 500;
+      border-bottom: 1px dashed #e0e0e0;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+    ul{
+      li{
+        color: var(--bodyColor);
+        span{
+          font-weight: 500;
+          font-size: 16px;
+          color: var(--blackColor);
+          margin-bottom: 4px;
+        }
+
+        &:not(:last-child){
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}

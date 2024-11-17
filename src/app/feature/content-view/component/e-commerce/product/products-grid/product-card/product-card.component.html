@@ -1,0 +1,19 @@
+<section>
+  <div class="img">
+    <img [src]="product().img" alt="">
+    <button class="btn-fav" [ngClass]="{'favourite': isFavourite}" (click)="isFavourite=!isFavourite">
+        <fa-icon [icon]="isFavourite?faHeartS:faHeartR"/>
+    </button>
+  </div>
+  <ul class="body d-flex flex-column align-items-center py-3">
+    <li class="title ">{{product().title}}</li>
+    <li class="price"><b>${{product().price}}.00</b> <s>${{product().oldPrice}}.00</s></li>
+    <li class="rate"><app-rate [rate]="product().rate || 0"/></li>
+  </ul>
+  <div class="action">
+    <button mat-flat-button matRipple [matRippleCentered]="true" matRippleColor="#1881fa1f">
+      <mat-icon>shopping_basket</mat-icon> add to cart
+    </button>
+  </div>
+
+</section>

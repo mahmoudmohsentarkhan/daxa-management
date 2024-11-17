@@ -1,0 +1,33 @@
+<div class="drop-down">
+  <div class="list">
+    <div class="head">
+      <div class="title">
+        {{head().subtitle}}
+      </div>
+      <button>
+        {{head().clear}}
+      </button>
+    </div>
+
+    <ul class="items">
+      @for (item of [].constructor(5); track $index) {
+        <li>
+          <div class="img">
+            <img src="https://angular.hibootstrap.com/daxa/images/users/user12.jpg" alt="profile-img" width="100%" height="100%">
+          </div>
+          <div class="content">
+            <div class="sub-title">
+              <span class="owner">Jacob Liwiski</span>
+              <span>35 mins ago</span>
+            </div>
+            <p> Hey Victor! Could you please... </p>
+          </div>
+        </li>
+      }
+    </ul>
+
+    <div class="tail">
+      <a href="">{{tail().name}}</a>
+    </div>
+  </div>
+</div>

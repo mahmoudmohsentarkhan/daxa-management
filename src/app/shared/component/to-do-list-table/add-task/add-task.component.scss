@@ -1,0 +1,61 @@
+section{
+  padding-block: 10px;
+  h2{
+    &::before{
+      display: none
+    }
+    mat-icon{
+      cursor: pointer;
+      &:hover{
+        background-color: #ecf4fe;
+      }
+    }
+  }
+  form{
+    mat-form-field{
+      width: 100%;
+    }
+    .main-label{
+      margin-bottom: 5px;
+    }
+  }
+  mat-dialog-actions{
+    button{
+      padding-block: 15px;
+      width: 110px;
+      text-align: center;
+      color: #fff;
+      border-radius: 5px;
+      &:first-child{
+        margin-inline-end: 10px;
+        background-color: var(--dangerColor);
+        &:hover{
+          filter: grayscale(15%);
+        }
+      }
+      &:last-child{
+        &:disabled{
+          background-color: rgb(172, 171, 171);
+        }
+        background-color: var(--daxaColor);
+      }
+    }
+  }
+
+}
+::ng-deep  {
+  .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: #fff !important;
+    border: 1px solid #dae0ec !important;
+    outline: none;
+  }
+  mat-calendar{
+    background-color: #fff;
+  }
+  .mat-form-field-underline {
+    display: none;
+  }
+  .mat-mdc-dialog-surface{
+    border-radius: 5px;
+  }
+}

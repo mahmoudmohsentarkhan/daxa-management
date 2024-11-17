@@ -1,0 +1,11 @@
+section{
+  .status{
+    background-color: var(--primaryColor) !important;
+    color: #fff;
+    mat-icon{
+      font-size: 25px;
+      height: 25px;
+      width: 25px;
+    }
+  }
+}

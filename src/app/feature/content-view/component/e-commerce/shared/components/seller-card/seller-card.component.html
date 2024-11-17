@@ -1,0 +1,27 @@
+<section styleSection>
+  <div class="d-flex justify-content-end">
+    <menu-list/>
+  </div>
+
+  <div class="title d-flex justify-content-center align-content-center">
+    <img [src]="seller().img" alt="logo">
+    <button>{{seller().name}}</button>
+  </div>
+  <ul class="content">
+    <li>
+      <span>Last Sale Date: </span>{{seller().LastSaleDate}}
+    </li>
+    <li>
+      <span>Item Stock: </span>{{seller().stock}}
+    </li>
+    <li>
+      <span>Wallet Balance: </span> {{seller().walletBalance | currency}}
+    </li>
+    <li>
+      <span>Revenue: </span>{{seller().revenue | currency}}
+    </li>
+    <li>
+      <span>Store: </span>{{seller().store}}
+    </li>
+  </ul>
+</section>

@@ -1,0 +1,10 @@
+{
+  "/daxa-api": {
+    "target": "https://mahmoudmohsentarkhan.github.io/daxa-api",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/daxa-api": ""
+    }
+  }
+}
